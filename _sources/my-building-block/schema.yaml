@@ -1,5 +1,5 @@
 "$schema": https://json-schema.org/draft/2020-12/schema
-description: 'Schema for my building block'
+description: 'Schema for the MOD-DCAT-Profile building block'
 type: object
 properties:
   a:
