@@ -294,7 +294,7 @@
     </script>
   </head>
 
-  <body class="bbr bbr_template bbr_template_my-building-block bbr_template_my-building-block_index" data-languages="[&quot;shell&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="bbr bbr_template bbr_template_mod-dcat-bblock bbr_template_mod-dcat-bblock_index" data-languages="[&quot;shell&quot;,&quot;python&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -314,7 +314,7 @@
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#mod-dcat-profile-ogc-bbr-template-my-building-block" class="toc-h1 toc-link" data-title="MOD-DCAT-Profile ogc.bbr.template.my-building-block">MOD-DCAT-Profile <code>ogc.bbr.template.my-building-block</code></a>
+            <a href="#mod-dcat-profile-ogc-bbr-template-mod-dcat-bblock" class="toc-h1 toc-link" data-title="MOD-DCAT-Profile ogc.bbr.template.mod-dcat-bblock">MOD-DCAT-Profile <code>ogc.bbr.template.mod-dcat-bblock</code></a>
           </li>
           <li>
             <a href="#description" class="toc-h1 toc-link" data-title="Description">Description</a>
@@ -357,7 +357,7 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='mod-dcat-profile-ogc-bbr-template-my-building-block'>MOD-DCAT-Profile <code>ogc.bbr.template.my-building-block</code></h1>
+        <h1 id='mod-dcat-profile-ogc-bbr-template-mod-dcat-bblock'>MOD-DCAT-Profile <code>ogc.bbr.template.mod-dcat-bblock</code></h1>
 <p>This Building Block is the DCAT Profile for the MOD ontology</p>
 
 <p class="status">
@@ -381,34 +381,39 @@ This building block is <strong>valid</strong>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello, world!</span><span class="dl">'</span><span class="p">)</span>
 </code></pre></div><h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
 <span class="na">description</span><span class="pi">:</span> <span class="s">Schema for the MOD-DCAT-Profile building block</span>
-<span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
-<span class="na">properties</span><span class="pi">:</span>
-  <span class="na">a</span><span class="pi">:</span>
-    <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
-    <span class="na">format</span><span class="pi">:</span> <span class="s">uri</span>
-  <span class="na">b</span><span class="pi">:</span>
-    <span class="na">type</span><span class="pi">:</span> <span class="s">number</span>
-<span class="na">required</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="s">a</span>
-<span class="pi">-</span> <span class="s">b</span>
+<span class="na">$defs</span><span class="pi">:</span>
+  <span class="na">SemanticArtefact</span><span class="pi">:</span>
+    <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
+    <span class="na">properties</span><span class="pi">:</span>
+      <span class="na">acronym</span><span class="pi">:</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="s">dct:title:</span>
+        <span class="s">type</span><span class="err">:</span> <span class="s">string</span>
+    <span class="na">required</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">acronym</span>
+    <span class="pi">-</span> <span class="s">title</span>
+<span class="na">anyOf</span><span class="pi">:</span>
+<span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/SemanticArtefact'</span>
 <span class="na">x-jsonld-prefixes</span><span class="pi">:</span>
+  <span class="na">mod</span><span class="pi">:</span> <span class="s">https://w3id.org/mod#</span>
   <span class="na">rdf</span><span class="pi">:</span> <span class="s">http://www.w3.org/1999/02/22-rdf-syntax-ns#</span>
   <span class="na">rdfs</span><span class="pi">:</span> <span class="s">http://www.w3.org/2000/01/rdf-schema#</span>
   <span class="na">xsd</span><span class="pi">:</span> <span class="s">http://www.w3.org/2001/XMLSchema#</span>
 
 </code></pre></div>
 <blockquote>
-<p><a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmy-building-block%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a></p>
+<p><a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmod-dcat-bblock%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a></p>
 </blockquote>
 
 <p>Links to the schema:</p>
 
 <ul>
-<li>YAML version: <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema.yaml" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema.yaml</a></li>
-<li>JSON version: <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema.json" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema.json</a></li>
+<li>YAML version: <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/schema.yaml" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/schema.yaml</a></li>
+<li>JSON version: <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/schema.json" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/schema.json</a></li>
 </ul>
 <h1 id='json-ld-context'>JSON-LD Context</h1><div class="highlight"><pre class="highlight json tab-json--ldContext"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"mod"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://w3id.org/mod#"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"rdf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/1999/02/22-rdf-syntax-ns#"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"rdfs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/2000/01/rdf-schema#"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"xsd"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/2001/XMLSchema#"</span><span class="p">,</span><span class="w">
@@ -417,11 +422,11 @@ This building block is <strong>valid</strong>
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <blockquote>
-<p><a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmy-building-block%2Fcontext.jsonld">View on JSON-LD Playground</a></p>
+<p><a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmod-dcat-bblock%2Fcontext.jsonld">View on JSON-LD Playground</a></p>
 </blockquote>
 
 <p>You can find the full JSON-LD context here:
-<a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/context.jsonld" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/context.jsonld</a></p>
+<a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld</a></p>
 <h1 id='references'>References</h1>
 <ul>
 <li><a href="https://example.com/sources/1">Sample source document</a></li>
@@ -432,7 +437,7 @@ This building block is <strong>valid</strong>
 <ul>
 <li>URL: <a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile" target="_blank">https://github.com/FAIR-IMPACT/MOD-DCAT-profile</a></li>
 <li>Path:
-<code><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/HEAD/_sources/my-building-block" target="_blank">_sources/my-building-block</a></code></li>
+<code><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/HEAD/_sources/mod-dcat-bblock" target="_blank">_sources/mod-dcat-bblock</a></code></li>
 </ul>
 
       </div>
