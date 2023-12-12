@@ -61,8 +61,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/schema.yaml)
+* YAML version: [schema.yaml](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema.json)
+* JSON version: [schema.json](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema.yaml)
 
 
 # JSON-LD Context
@@ -79,7 +79,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/context.jsonld)
+[context.jsonld](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/context.jsonld)
 
 ## Sources
 

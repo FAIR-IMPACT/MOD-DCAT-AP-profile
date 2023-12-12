@@ -28,24 +28,24 @@
       ],
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/schema.json"
+        "application/yaml": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema.yaml",
+        "application/json": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema.json"
       },
-      "ldContext": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/context.jsonld",
-      "sourceFiles": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/_sources/my-building-block/",
+      "ldContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/context.jsonld",
+      "sourceFiles": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/my-building-block/",
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/generateddocs/markdown/bbr/template/my-building-block/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/generateddocs/json-full/bbr/template/my-building-block/index.json"
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/json-full/bbr/template/my-building-block/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/markdown/bbr/template/my-building-block/index.md"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/generateddocs/slate-build/bbr/template/my-building-block/"
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/slate-build/bbr/template/my-building-block/"
         }
       }
     }

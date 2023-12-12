@@ -16,6 +16,6 @@ x-defs:
       rdfs: http://www.w3.org/2000/01/rdf-schema#
       xsd: http://www.w3.org/2001/XMLSchema#
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/schema-oas3.0.yaml
+    x-schema-source: https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema-oas3.0.yaml
 allOf:
-- $ref: https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/schema-oas3.0.yaml#/x-defs/ogc.bbr.template.my-building-block
+- $ref: https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema-oas3.0.yaml#/x-defs/ogc.bbr.template.my-building-block

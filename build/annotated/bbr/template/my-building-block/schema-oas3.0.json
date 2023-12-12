@@ -22,12 +22,12 @@
         "xsd": "http://www.w3.org/2001/XMLSchema#"
       },
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/schema-oas3.0.json"
+      "x-schema-source": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema-oas3.0.json"
     }
   },
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/schema-oas3.0.json#/x-defs/ogc.bbr.template.my-building-block"
+      "$ref": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema-oas3.0.json#/x-defs/ogc.bbr.template.my-building-block"
     }
   ]
 }
