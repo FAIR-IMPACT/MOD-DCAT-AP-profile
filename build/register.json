@@ -35,13 +35,13 @@
       "sourceFiles": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/_sources/my-building-block/",
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/generateddocs/json-full/bbr/template/my-building-block/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/generateddocs/markdown/bbr/template/my-building-block/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/generateddocs/json-full/bbr/template/my-building-block/index.json"
         },
         "slate": {
           "mediatype": "text/html",
