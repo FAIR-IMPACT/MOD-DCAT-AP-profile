@@ -11,12 +11,16 @@
         "dct:title": {
           "type": "string"
         }        
-      }
+      },
+      "required": [
+        "acronym",
+        "title"
+      ]
+    }
   },
   "anyOf": [
     {
       "$ref": "#/$defs/SemanticArtefact"
     }
   ]
- }
 }
