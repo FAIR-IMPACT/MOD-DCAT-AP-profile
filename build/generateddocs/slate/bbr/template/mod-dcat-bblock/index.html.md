@@ -2,9 +2,9 @@
 title: MOD-DCAT-Profile (Schema)
 
 language_tabs:
-  - shell
-  - python: Python
-  - javascript: Javascript
+  - json: JSON
+  - jsonld: JSON-LD
+  - turtle: RDF/Turtle
 
 toc_footers:
   - Version 0.1
@@ -26,11 +26,11 @@ This Building Block is the DCAT Profile for the MOD ontology
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
-    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
+    <a href="http://www.opengis.net/def/status/invalid" target="_blank" data-rainbow-uri>Invalid</a>
 </p>
 
-<aside class="success">
-This building block is <strong>valid</strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/" target="_blank">failed</a></strong>
 </aside>
 
 # Description
@@ -41,34 +41,64 @@ This is the representation of the DCAT Profile for MOD. This document provides a
 
 # Examples
 
-## This is an example with just a description and no code snippets.
+## Examples of MOD descriptions complying with the DCAT profile.
 
 This is the content of the example.
 
-In **Markdown** format.
 
 
-## Examples can have content and/or code snippets.
-
-The content of this example. 
-
-
-
-```shell
-echo 'Hello, world!'
+```json
+{
+    "mod:acronym": "mySA",
+    "dct:title": "my semantic artefact",    
+}
+  
+  
+  
+  
 ```
 
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-bblock%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
 
 
-```python
-print('Hello, world!')
+
+
+```jsonld
+{
+  "mod:acronym": "mySA",
+  "dct:title": "my semantic artefact",
+  "@context": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld"
+}
 ```
 
+<blockquote class="lang-specific jsonld">
+  <p class="example-links">
+    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-bblock%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+</blockquote>
 
 
-```javascript
-console.log('Hello, world!')
+
+
+```turtle
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns1: <dct:> .
+
+[] ns1:title "my semantic artefact" ;
+    mod:acronym "mySA" .
+
+
 ```
+
+<blockquote class="lang-specific turtle">
+  <p class="example-links">
+    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.ttl">Open in new window</a>
+</blockquote>
+
 
 
 # JSON Schema

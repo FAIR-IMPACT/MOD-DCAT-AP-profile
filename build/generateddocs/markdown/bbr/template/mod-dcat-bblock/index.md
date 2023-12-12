@@ -5,7 +5,7 @@
 
 This Building Block is the DCAT Profile for the MOD ontology
 
-[*Status*](http://www.opengis.net/def/status): Under development
+[*Status*](http://www.opengis.net/def/status): Invalid
 
 ## Description
 
@@ -15,26 +15,38 @@ This is the representation of the DCAT Profile for MOD. This document provides a
 
 ## Examples
 
-### This is an example with just a description and no code snippets.
+### Examples of MOD descriptions complying with the DCAT profile.
 This is the content of the example.
-
-In **Markdown** format.
-
-### Examples can have content and/or code snippets.
-The content of this example. 
-#### shell
-```shell
-echo 'Hello, world!'
+#### json
+```json
+{
+    "mod:acronym": "mySA",
+    "dct:title": "my semantic artefact",    
+}
+  
+  
+  
+  
 ```
 
-#### python
-```python
-print('Hello, world!')
+#### jsonld
+```jsonld
+{
+  "mod:acronym": "mySA",
+  "dct:title": "my semantic artefact",
+  "@context": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld"
+}
 ```
 
-#### javascript
-```javascript
-console.log('Hello, world!')
+#### ttl
+```ttl
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns1: <dct:> .
+
+[] ns1:title "my semantic artefact" ;
+    mod:acronym "mySA" .
+
+
 ```
 
 ## Schema

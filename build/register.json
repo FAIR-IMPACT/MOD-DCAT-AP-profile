@@ -8,7 +8,7 @@
       "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
       "name": "MOD-DCAT-Profile",
       "abstract": "This Building Block is the DCAT Profile for the MOD ontology",
-      "status": "under-development",
+      "status": "invalid",
       "dateTimeAddition": "2023-12-12T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-register",
@@ -33,15 +33,16 @@
       },
       "ldContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld",
       "sourceFiles": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-bblock/",
-      "validationPassed": true,
+      "validationPassed": false,
+      "testOutputs": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/markdown/bbr/template/mod-dcat-bblock/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/json-full/bbr/template/mod-dcat-bblock/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/markdown/bbr/template/mod-dcat-bblock/index.md"
         },
         "slate": {
           "mediatype": "text/html",

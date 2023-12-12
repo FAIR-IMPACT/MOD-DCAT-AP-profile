@@ -1,0 +1,6 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns1: <dct:> .
+
+[] ns1:title "my semantic artefact" ;
+    mod:acronym "mySA" .
+
