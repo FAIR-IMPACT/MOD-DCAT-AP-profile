@@ -5,7 +5,7 @@
 
 This Building Block is the DCAT Profile for the MOD ontology
 
-[*Status*](http://www.opengis.net/def/status): Invalid
+[*Status*](http://www.opengis.net/def/status): Under development
 
 ## Description
 
@@ -21,7 +21,7 @@ This is the content of the example.
 ```json
 {
     "mod:acronym": "mySA",
-    "dct:title": "my semantic artefact",    
+    "dct:title": "my semantic artefact"    
 }
   
   
@@ -58,13 +58,13 @@ $defs:
   SemanticArtefact:
     type: object
     properties:
-      acronym:
+      mod:acronym:
         type: string
       dct:title:
         type: string
     required:
-    - acronym
-    - title
+    - mod:acronym
+    - dct:title
 anyOf:
 - $ref: '#/$defs/SemanticArtefact'
 x-jsonld-prefixes:

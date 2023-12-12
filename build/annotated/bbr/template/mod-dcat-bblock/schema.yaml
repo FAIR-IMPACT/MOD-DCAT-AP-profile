@@ -4,13 +4,13 @@ $defs:
   SemanticArtefact:
     type: object
     properties:
-      acronym:
+      mod:acronym:
         type: string
       dct:title:
         type: string
     required:
-    - acronym
-    - title
+    - mod:acronym
+    - dct:title
 anyOf:
 - $ref: '#/$defs/SemanticArtefact'
 x-jsonld-prefixes:

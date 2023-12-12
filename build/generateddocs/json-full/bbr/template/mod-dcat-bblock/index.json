@@ -5,7 +5,7 @@
   "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
   "name": "MOD-DCAT-Profile",
   "abstract": "This Building Block is the DCAT Profile for the MOD ontology",
-  "status": "invalid",
+  "status": "under-development",
   "dateTimeAddition": "2023-12-12T00:00:00Z",
   "itemClass": "schema",
   "register": "ogc-building-block-register",
@@ -30,7 +30,7 @@
   },
   "ldContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld",
   "sourceFiles": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-bblock/",
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/",
   "description": "## MOD-DCAT-Profile\n\nThis is the representation of the DCAT Profile for MOD. This document provides a human-readable description of the Profile.\n",
   "examples": [
@@ -42,7 +42,7 @@
           "language": "json",
           "ref": "examples/mod-ex1.json",
           "schema-ref": "#/$defs/SemanticArtefact",
-          "code": "{\n    \"mod:acronym\": \"mySA\",\n    \"dct:title\": \"my semantic artefact\",    \n}\n  \n  \n  \n  ",
+          "code": "{\n    \"mod:acronym\": \"mySA\",\n    \"dct:title\": \"my semantic artefact\"    \n}\n  \n  \n  \n  ",
           "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.json"
         },
         {
@@ -58,7 +58,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for the MOD-DCAT-Profile building block\n$defs:\n  SemanticArtefact:\n    type: object\n    properties:\n      acronym:\n        type: string\n      dct:title:\n        type: string\n    required:\n    - acronym\n    - title\nanyOf:\n- $ref: '#/$defs/SemanticArtefact'\nx-jsonld-prefixes:\n  mod: https://w3id.org/mod#\n  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  xsd: http://www.w3.org/2001/XMLSchema#\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for the MOD-DCAT-Profile building block\n$defs:\n  SemanticArtefact:\n    type: object\n    properties:\n      mod:acronym:\n        type: string\n      dct:title:\n        type: string\n    required:\n    - mod:acronym\n    - dct:title\nanyOf:\n- $ref: '#/$defs/SemanticArtefact'\nx-jsonld-prefixes:\n  mod: https://w3id.org/mod#\n  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  xsd: http://www.w3.org/2001/XMLSchema#\n",
   "gitRepository": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile",
   "gitPath": "_sources/mod-dcat-bblock"
 }

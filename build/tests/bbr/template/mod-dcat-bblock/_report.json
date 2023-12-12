@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.bbr.template.mod-dcat-bblock - MOD-DCAT-Profile",
   "bblockName": "MOD-DCAT-Profile",
   "bblockId": "ogc.bbr.template.mod-dcat-bblock",
-  "generated": "2023-12-12T17:33:18.561871+00:00",
-  "result": false,
+  "generated": "2023-12-12T17:35:06.111227+00:00",
+  "result": true,
   "items": [
     {
       "source": {
@@ -14,7 +14,7 @@
         "snippetIndex": 1,
         "language": "json"
       },
-      "result": false,
+      "result": true,
       "sections": [
         {
           "name": "GENERAL",
@@ -61,11 +61,9 @@
             },
             {
               "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'acronym' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'acronym' is a required property\n\nFailed validating 'required' in schema:\n    {'properties': {'acronym': {'type': 'string'},\n                    'dct:title': {'type': 'string'}},\n     'required': ['acronym', 'title'],\n     'type': 'object'}\n\nOn instance:\n    {'dct:title': 'my semantic artefact', 'mod:acronym': 'mySA'}"
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
             }
           ]
         },
@@ -95,7 +93,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 0,
-    "failed": 1
+    "passed": 1,
+    "failed": 0
   }
 }

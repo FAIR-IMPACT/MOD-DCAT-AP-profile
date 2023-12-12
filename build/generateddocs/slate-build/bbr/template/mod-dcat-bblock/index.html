@@ -359,11 +359,11 @@
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
-    <a href="http://www.opengis.net/def/status/invalid" target="_blank" data-rainbow-uri>Invalid</a>
+    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="warning">
-Validation for this building block has <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/" target="_blank">failed</a></strong>
+<aside class="success">
+This building block is <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/" target="_blank">valid</a></strong>
 </aside>
 <h1 id='description'>Description</h1><h2 id='mod-dcat-profile'>MOD-DCAT-Profile</h2>
 <p>This is the representation of the DCAT Profile for MOD. This document provides a human-readable description of the Profile.</p>
@@ -371,7 +371,7 @@ Validation for this building block has <strong><a href="https://github.com/FAIR-
 <p>This is the content of the example.</p>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"mod:acronym"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mySA"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"dct:title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my semantic artefact"</span><span class="p">,</span><span class="w">    
+    </span><span class="nl">"dct:title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"my semantic artefact"</span><span class="w">    
 </span><span class="p">}</span><span class="w">
 
 
@@ -412,13 +412,13 @@ Validation for this building block has <strong><a href="https://github.com/FAIR-
   <span class="na">SemanticArtefact</span><span class="pi">:</span>
     <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
     <span class="na">properties</span><span class="pi">:</span>
-      <span class="na">acronym</span><span class="pi">:</span>
-        <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
+      <span class="s">mod:acronym:</span>
+        <span class="s">type</span><span class="err">:</span> <span class="s">string</span>
       <span class="s">dct:title:</span>
         <span class="s">type</span><span class="err">:</span> <span class="s">string</span>
     <span class="na">required</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">acronym</span>
-    <span class="pi">-</span> <span class="s">title</span>
+    <span class="pi">-</span> <span class="s">mod:acronym</span>
+    <span class="pi">-</span> <span class="s">dct:title</span>
 <span class="na">anyOf</span><span class="pi">:</span>
 <span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/SemanticArtefact'</span>
 <span class="na">x-jsonld-prefixes</span><span class="pi">:</span>

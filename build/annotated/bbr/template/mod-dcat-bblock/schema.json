@@ -5,7 +5,7 @@
     "SemanticArtefact": {
       "type": "object",
       "properties": {
-        "acronym": {
+        "mod:acronym": {
           "type": "string"
         },
         "dct:title": {
@@ -13,8 +13,8 @@
         }
       },
       "required": [
-        "acronym",
-        "title"
+        "mod:acronym",
+        "dct:title"
       ]
     }
   },

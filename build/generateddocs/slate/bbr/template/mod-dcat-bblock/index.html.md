@@ -26,11 +26,11 @@ This Building Block is the DCAT Profile for the MOD ontology
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
-    <a href="http://www.opengis.net/def/status/invalid" target="_blank" data-rainbow-uri>Invalid</a>
+    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="warning">
-Validation for this building block has <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/" target="_blank">failed</a></strong>
+<aside class="success">
+This building block is <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/" target="_blank">valid</a></strong>
 </aside>
 
 # Description
@@ -50,7 +50,7 @@ This is the content of the example.
 ```json
 {
     "mod:acronym": "mySA",
-    "dct:title": "my semantic artefact",    
+    "dct:title": "my semantic artefact"    
 }
   
   
@@ -110,13 +110,13 @@ $defs:
   SemanticArtefact:
     type: object
     properties:
-      acronym:
+      mod:acronym:
         type: string
       dct:title:
         type: string
     required:
-    - acronym
-    - title
+    - mod:acronym
+    - dct:title
 anyOf:
 - $ref: '#/$defs/SemanticArtefact'
 x-jsonld-prefixes:
