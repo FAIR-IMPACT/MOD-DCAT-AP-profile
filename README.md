@@ -1,10 +1,11 @@
-# OGC Building Block template
+![Build Pages & Deploy](https://github.com/FAIR-IMPACT/MOD-DCAT-profile/actions/workflows/pages/pages-build-deployment/badge.svg)
 
-This template provides a working example of an OGC BuildingBlock.
+# MOD-DCAT-Profile based on OGC Building Block template
+
+This repository provides a representation of the MOD DCAT Profile based on the OGC Building Block template.
 
 [Examples of using this with typical applications of OGC standards](https://github.com/ogcincubator/bblocks-examples)
 
-Please replace the contents of this README with information about your Building Block(s).
 
 # How to use this template
 
