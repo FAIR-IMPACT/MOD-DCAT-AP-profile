@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for ogc.bbr.template.mod-dcat-bblock - MOD-DCAT-Profile",
+  "bblockName": "MOD-DCAT-Profile",
+  "bblockId": "ogc.bbr.template.mod-dcat-bblock",
+  "generated": "2023-12-12T17:09:05.625023+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

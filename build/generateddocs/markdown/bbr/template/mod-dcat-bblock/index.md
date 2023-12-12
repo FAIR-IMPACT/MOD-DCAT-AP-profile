@@ -1,7 +1,7 @@
 
 # MOD-DCAT-Profile (Schema)
 
-`ogc.bbr.template.my-building-block` *v0.1*
+`ogc.bbr.template.mod-dcat-bblock` *v0.1*
 
 This Building Block is the DCAT Profile for the MOD ontology
 
@@ -42,17 +42,21 @@ console.log('Hello, world!')
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Schema for the MOD-DCAT-Profile building block
-type: object
-properties:
-  a:
-    type: string
-    format: uri
-  b:
-    type: number
-required:
-- a
-- b
+$defs:
+  SemanticArtefact:
+    type: object
+    properties:
+      acronym:
+        type: string
+      dct:title:
+        type: string
+    required:
+    - acronym
+    - title
+anyOf:
+- $ref: '#/$defs/SemanticArtefact'
 x-jsonld-prefixes:
+  mod: https://w3id.org/mod#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   xsd: http://www.w3.org/2001/XMLSchema#
@@ -61,8 +65,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema.json)
-* JSON version: [schema.json](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/schema.yaml)
+* YAML version: [schema.yaml](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/schema.json)
+* JSON version: [schema.json](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/schema.yaml)
 
 
 # JSON-LD Context
@@ -70,6 +74,7 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "mod": "https://w3id.org/mod#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -79,7 +84,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/my-building-block/context.jsonld)
+[context.jsonld](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld)
 
 ## Sources
 
@@ -90,5 +95,5 @@ You can find the full JSON-LD context here:
 The source code for this Building Block can be found in the following repository:
 
 * URL: [https://github.com/FAIR-IMPACT/MOD-DCAT-profile](https://github.com/FAIR-IMPACT/MOD-DCAT-profile)
-* Path: `_sources/my-building-block`
+* Path: `_sources/mod-dcat-bblock`
 
