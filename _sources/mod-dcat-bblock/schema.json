@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Schema for the MOD-DCAT-Profile building block",
+  "$defs": {
+    "SemanticArtefact": {
+      "type": "object",
+      "properties": {
+        "acronym": {
+          "type": "string"
+        },
+        "dct:title": {
+          "type": "string"
+        }        
+      }
+  },
+  "anyOf": [
+    {
+      "$ref": "#/$defs/SemanticArtefact"
+    }
+  ]
+ }
+}
