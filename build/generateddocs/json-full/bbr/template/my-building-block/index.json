@@ -3,14 +3,14 @@
 {
   "itemIdentifier": "ogc.bbr.template.my-building-block",
   "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
-  "name": "My Building Block",
-  "abstract": "This Building Block serves as a template to create new ones",
+  "name": "MOD-DCAT-Profile",
+  "abstract": "This Building Block is the DCAT Profile for the MOD ontology",
   "status": "under-development",
-  "dateTimeAddition": "2023-04-05T00:00:00Z",
+  "dateTimeAddition": "2023-12-12T00:00:00Z",
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2023-04-05",
+  "dateOfLastChange": "2023-12-12",
   "link": "https://github.com/opengeospatial/bblock-template",
   "sources": [
     {
@@ -31,7 +31,7 @@
   "ldContext": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/context.jsonld",
   "sourceFiles": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/_sources/my-building-block/",
   "validationPassed": true,
-  "description": "## Qui hastarum tectus Cithaeron iuvabat\n\nLorem markdownum vestigia sanguine rursus undis, suspenderat meo mox conlegerat\ntemperat sucos. Est graves dant sentire sanguinis flores respondent testari.\n\n> Videri vias quid Ausoniae sua flores ante, reminiscitur fuit est. Semel\n> [hectora](http://silvaque.org/) peregrinaeque rudem exercent in, Troiana si\n> Asida instabilesque somno sed.\n\n## Iam vota cui dilataque peterem\n\nTinxit lumina lacer liquidarum Aiax si mergitur sed fueris capitisque **et\ncadit** contigerant rectum [ferar](http://prosternit.com/quoque.html) temperat.\nMonet caput adsensere Ityn furentibus gelidos.",
+  "description": "## MOD-DCAT-Profile\n\nThis is the representation of the DCAT Profile for MOD. This document provides a human-readable description of the Profile.\n",
   "examples": [
     {
       "title": "This is an example with just a description and no code snippets.",
@@ -56,7 +56,7 @@
       ]
     }
   ],
-  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for my building block\ntype: object\nproperties:\n  a:\n    type: string\n    format: uri\n    x-jsonld-id: https://example.org/my-bb-model/a\n    x-jsonld-type: '@id'\n  b:\n    type: number\n    x-jsonld-id: https://example.org/my-bb-model/b\nrequired:\n- a\n- b\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for the MOD-DCAT-Profile building block\ntype: object\nproperties:\n  a:\n    type: string\n    format: uri\n  b:\n    type: number\nrequired:\n- a\n- b\nx-jsonld-prefixes:\n  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  xsd: http://www.w3.org/2001/XMLSchema#\n",
   "gitRepository": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile",
   "gitPath": "_sources/my-building-block"
 }

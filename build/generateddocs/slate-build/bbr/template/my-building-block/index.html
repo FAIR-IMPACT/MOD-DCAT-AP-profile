@@ -6,9 +6,9 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta
-            name="My Building Block (Schema)"
+            name="MOD-DCAT-Profile (Schema)"
         >
-    <title>My Building Block (Schema)</title>
+    <title>MOD-DCAT-Profile (Schema)</title>
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -314,16 +314,13 @@
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#my-building-block-ogc-bbr-template-my-building-block" class="toc-h1 toc-link" data-title="My Building Block ogc.bbr.template.my-building-block">My Building Block <code>ogc.bbr.template.my-building-block</code></a>
+            <a href="#mod-dcat-profile-ogc-bbr-template-my-building-block" class="toc-h1 toc-link" data-title="MOD-DCAT-Profile ogc.bbr.template.my-building-block">MOD-DCAT-Profile <code>ogc.bbr.template.my-building-block</code></a>
           </li>
           <li>
             <a href="#description" class="toc-h1 toc-link" data-title="Description">Description</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#qui-hastarum-tectus-cithaeron-iuvabat" class="toc-h2 toc-link" data-title="Qui hastarum tectus Cithaeron iuvabat">Qui hastarum tectus Cithaeron iuvabat</a>
-                  </li>
-                  <li>
-                    <a href="#iam-vota-cui-dilataque-peterem" class="toc-h2 toc-link" data-title="Iam vota cui dilataque peterem">Iam vota cui dilataque peterem</a>
+                    <a href="#mod-dcat-profile" class="toc-h2 toc-link" data-title="MOD-DCAT-Profile">MOD-DCAT-Profile</a>
                   </li>
               </ul>
           </li>
@@ -353,15 +350,15 @@
       </ul>
         <ul class="toc-footer">
             <li>Version 0.1</li>
-            <li><a href='#'>My Building Block</a></li>
+            <li><a href='#'>MOD-DCAT-Profile</a></li>
             <li><a href='https://blocks.ogc.org/register.html'>Building Blocks register</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id='my-building-block-ogc-bbr-template-my-building-block'>My Building Block <code>ogc.bbr.template.my-building-block</code></h1>
-<p>This Building Block serves as a template to create new ones</p>
+        <h1 id='mod-dcat-profile-ogc-bbr-template-my-building-block'>MOD-DCAT-Profile <code>ogc.bbr.template.my-building-block</code></h1>
+<p>This Building Block is the DCAT Profile for the MOD ontology</p>
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
@@ -371,19 +368,8 @@
 <aside class="success">
 This building block is <strong>valid</strong>
 </aside>
-<h1 id='description'>Description</h1><h2 id='qui-hastarum-tectus-cithaeron-iuvabat'>Qui hastarum tectus Cithaeron iuvabat</h2>
-<p>Lorem markdownum vestigia sanguine rursus undis, suspenderat meo mox conlegerat
-temperat sucos. Est graves dant sentire sanguinis flores respondent testari.</p>
-
-<blockquote>
-<p>Videri vias quid Ausoniae sua flores ante, reminiscitur fuit est. Semel
-<a href="http://silvaque.org/">hectora</a> peregrinaeque rudem exercent in, Troiana si
-Asida instabilesque somno sed.</p>
-</blockquote>
-<h2 id='iam-vota-cui-dilataque-peterem'>Iam vota cui dilataque peterem</h2>
-<p>Tinxit lumina lacer liquidarum Aiax si mergitur sed fueris capitisque <strong>et
-cadit</strong> contigerant rectum <a href="http://prosternit.com/quoque.html">ferar</a> temperat.
-Monet caput adsensere Ityn furentibus gelidos.</p>
+<h1 id='description'>Description</h1><h2 id='mod-dcat-profile'>MOD-DCAT-Profile</h2>
+<p>This is the representation of the DCAT Profile for MOD. This document provides a human-readable description of the Profile.</p>
 <h1 id='examples'>Examples</h1><h2 id='this-is-an-example-with-just-a-description-and-no-code-snippets'>This is an example with just a description and no code snippets.</h2>
 <p>This is the content of the example.</p>
 
@@ -394,20 +380,21 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 </code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="k">print</span><span class="p">(</span><span class="s">'Hello, world!'</span><span class="p">)</span>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello, world!</span><span class="dl">'</span><span class="p">)</span>
 </code></pre></div><h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
-<span class="na">description</span><span class="pi">:</span> <span class="s">Schema for my building block</span>
+<span class="na">description</span><span class="pi">:</span> <span class="s">Schema for the MOD-DCAT-Profile building block</span>
 <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
 <span class="na">properties</span><span class="pi">:</span>
   <span class="na">a</span><span class="pi">:</span>
     <span class="na">type</span><span class="pi">:</span> <span class="s">string</span>
     <span class="na">format</span><span class="pi">:</span> <span class="s">uri</span>
-    <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">https://example.org/my-bb-model/a</span>
-    <span class="na">x-jsonld-type</span><span class="pi">:</span> <span class="s1">'</span><span class="s">@id'</span>
   <span class="na">b</span><span class="pi">:</span>
     <span class="na">type</span><span class="pi">:</span> <span class="s">number</span>
-    <span class="na">x-jsonld-id</span><span class="pi">:</span> <span class="s">https://example.org/my-bb-model/b</span>
 <span class="na">required</span><span class="pi">:</span>
 <span class="pi">-</span> <span class="s">a</span>
 <span class="pi">-</span> <span class="s">b</span>
+<span class="na">x-jsonld-prefixes</span><span class="pi">:</span>
+  <span class="na">rdf</span><span class="pi">:</span> <span class="s">http://www.w3.org/1999/02/22-rdf-syntax-ns#</span>
+  <span class="na">rdfs</span><span class="pi">:</span> <span class="s">http://www.w3.org/2000/01/rdf-schema#</span>
+  <span class="na">xsd</span><span class="pi">:</span> <span class="s">http://www.w3.org/2001/XMLSchema#</span>
 
 </code></pre></div>
 <blockquote>
@@ -422,11 +409,9 @@ Monet caput adsensere Ityn furentibus gelidos.</p>
 </ul>
 <h1 id='json-ld-context'>JSON-LD Context</h1><div class="highlight"><pre class="highlight json tab-json--ldContext"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"@context"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"a"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"@id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.org/my-bb-model/a"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"@type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"@id"</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"b"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://example.org/my-bb-model/b"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rdf"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/1999/02/22-rdf-syntax-ns#"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"rdfs"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/2000/01/rdf-schema#"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"xsd"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.w3.org/2001/XMLSchema#"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"@version"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">}</span><span class="w">

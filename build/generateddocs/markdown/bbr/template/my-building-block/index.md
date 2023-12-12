@@ -1,28 +1,18 @@
 
-# My Building Block (Schema)
+# MOD-DCAT-Profile (Schema)
 
 `ogc.bbr.template.my-building-block` *v0.1*
 
-This Building Block serves as a template to create new ones
+This Building Block is the DCAT Profile for the MOD ontology
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
 ## Description
 
-## Qui hastarum tectus Cithaeron iuvabat
+## MOD-DCAT-Profile
 
-Lorem markdownum vestigia sanguine rursus undis, suspenderat meo mox conlegerat
-temperat sucos. Est graves dant sentire sanguinis flores respondent testari.
+This is the representation of the DCAT Profile for MOD. This document provides a human-readable description of the Profile.
 
-> Videri vias quid Ausoniae sua flores ante, reminiscitur fuit est. Semel
-> [hectora](http://silvaque.org/) peregrinaeque rudem exercent in, Troiana si
-> Asida instabilesque somno sed.
-
-## Iam vota cui dilataque peterem
-
-Tinxit lumina lacer liquidarum Aiax si mergitur sed fueris capitisque **et
-cadit** contigerant rectum [ferar](http://prosternit.com/quoque.html) temperat.
-Monet caput adsensere Ityn furentibus gelidos.
 ## Examples
 
 ### This is an example with just a description and no code snippets.
@@ -51,20 +41,21 @@ console.log('Hello, world!')
 
 ```yaml
 $schema: https://json-schema.org/draft/2020-12/schema
-description: Schema for my building block
+description: Schema for the MOD-DCAT-Profile building block
 type: object
 properties:
   a:
     type: string
     format: uri
-    x-jsonld-id: https://example.org/my-bb-model/a
-    x-jsonld-type: '@id'
   b:
     type: number
-    x-jsonld-id: https://example.org/my-bb-model/b
 required:
 - a
 - b
+x-jsonld-prefixes:
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  xsd: http://www.w3.org/2001/XMLSchema#
 
 ```
 
@@ -79,11 +70,9 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
-    "a": {
-      "@id": "https://example.org/my-bb-model/a",
-      "@type": "@id"
-    },
-    "b": "https://example.org/my-bb-model/b",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@version": 1.1
   }
 }

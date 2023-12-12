@@ -1,24 +1,26 @@
 {
   "x-defs": {
     "ogc.bbr.template.my-building-block": {
-      "description": "Schema for my building block",
+      "description": "Schema for the MOD-DCAT-Profile building block",
       "type": "object",
       "properties": {
         "a": {
           "type": "string",
-          "format": "uri",
-          "x-jsonld-id": "https://example.org/my-bb-model/a",
-          "x-jsonld-type": "@id"
+          "format": "uri"
         },
         "b": {
-          "type": "number",
-          "x-jsonld-id": "https://example.org/my-bb-model/b"
+          "type": "number"
         }
       },
       "required": [
         "a",
         "b"
       ],
+      "x-jsonld-prefixes": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+      },
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
       "x-schema-source": "https://raw.githubusercontent.com/FAIR-IMPACT/MOD-DCAT-profile/master/build/annotated/bbr/template/my-building-block/schema-oas3.0.json"
     }

@@ -1,8 +1,8 @@
 {
-  "title": "Validation report for ogc.bbr.template.my-building-block - My Building Block",
-  "bblockName": "My Building Block",
+  "title": "Validation report for ogc.bbr.template.my-building-block - MOD-DCAT-Profile",
+  "bblockName": "MOD-DCAT-Profile",
   "bblockId": "ogc.bbr.template.my-building-block",
-  "generated": "2023-12-12T12:35:49.127221+00:00",
+  "generated": "2023-12-12T13:07:28.540378+00:00",
   "result": true,
   "items": [],
   "globalErrors": {},
