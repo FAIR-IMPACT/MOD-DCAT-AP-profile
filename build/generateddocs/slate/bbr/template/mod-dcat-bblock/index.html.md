@@ -26,11 +26,11 @@ This Building Block is the DCAT Profile for the MOD ontology
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
-    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
+    <a href="http://www.opengis.net/def/status/invalid" target="_blank" data-rainbow-uri>Invalid</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/" target="_blank">failed</a></strong>
 </aside>
 
 # Description
@@ -107,7 +107,7 @@ This is the content of the example.
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Schema for the MOD-DCAT-Profile building block
 $defs:
-  SemanticArtefact:
+  mod:SemanticArtefact:
     type: object
     properties:
       mod:acronym:
@@ -117,8 +117,15 @@ $defs:
     required:
     - mod:acronym
     - dct:title
+  mod:SemanticArtefactDistribution:
+    type: object
+    properties:
+      mod:hasSyntax:
+        type: string
+      mod:hasRepresentationLanguage:
+        type: string
 anyOf:
-- $ref: '#/$defs/SemanticArtefact'
+- $ref: '#/$defs/mod:SemanticArtefact'
 x-jsonld-prefixes:
   mod: https://w3id.org/mod#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

@@ -5,7 +5,7 @@
 
 This Building Block is the DCAT Profile for the MOD ontology
 
-[*Status*](http://www.opengis.net/def/status): Under development
+[*Status*](http://www.opengis.net/def/status): Invalid
 
 ## Description
 
@@ -55,7 +55,7 @@ This is the content of the example.
 $schema: https://json-schema.org/draft/2020-12/schema
 description: Schema for the MOD-DCAT-Profile building block
 $defs:
-  SemanticArtefact:
+  mod:SemanticArtefact:
     type: object
     properties:
       mod:acronym:
@@ -65,8 +65,15 @@ $defs:
     required:
     - mod:acronym
     - dct:title
+  mod:SemanticArtefactDistribution:
+    type: object
+    properties:
+      mod:hasSyntax:
+        type: string
+      mod:hasRepresentationLanguage:
+        type: string
 anyOf:
-- $ref: '#/$defs/SemanticArtefact'
+- $ref: '#/$defs/mod:SemanticArtefact'
 x-jsonld-prefixes:
   mod: https://w3id.org/mod#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#

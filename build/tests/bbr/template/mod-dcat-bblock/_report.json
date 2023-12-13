@@ -2,8 +2,8 @@
   "title": "Validation report for ogc.bbr.template.mod-dcat-bblock - MOD-DCAT-Profile",
   "bblockName": "MOD-DCAT-Profile",
   "bblockId": "ogc.bbr.template.mod-dcat-bblock",
-  "generated": "2023-12-12T17:35:06.111227+00:00",
-  "result": true,
+  "generated": "2023-12-13T13:11:10.023866+00:00",
+  "result": false,
   "items": [
     {
       "source": {
@@ -14,7 +14,7 @@
         "snippetIndex": 1,
         "language": "json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -58,12 +58,6 @@
               "filename": "#/$defs/SemanticArtefact",
               "isError": false,
               "message": "Using the following JSON Schema: #/$defs/SemanticArtefact"
-            },
-            {
-              "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
             }
           ]
         },
@@ -90,10 +84,16 @@
       ]
     }
   ],
-  "globalErrors": {},
+  "globalErrors": {
+    "UNKNOWN": {
+      "exception": "AttributeError",
+      "isError": true,
+      "message": "Traceback (most recent call last):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 966, in resolve_fragment\n    document = document[part]\n,KeyError: 'SemanticArtefact'\n,\nDuring handling of the above exception, another exception occurred:\n\n,Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 483, in validate_inner\n    validate_json(json_doc, schema_validator)\n,  File \"/src/ogc/bblocks/validate.py\", line 842, in validate_json\n    error = jsonschema.exceptions.best_match(validator.iter_errors(instance))\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/exceptions.py\", line 384, in best_match\n    best = next(errors, None)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 288, in iter_errors\n    for error in errors:\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_validators.py\", line 294, in ref\n    scope, resolved = validator.resolver.resolve(ref)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 898, in resolve\n    return url, self._remote_cache(url)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 916, in resolve_from_url\n    return self.resolve_fragment(document, fragment)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 968, in resolve_fragment\n    raise exceptions.RefResolutionError(\n,jsonschema.exceptions.RefResolutionError: Unresolvable JSON pointer: '$defs/SemanticArtefact'\n,\nDuring handling of the above exception, another exception occurred:\n\n,Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 606, in _validate_resource\n    validate_inner()\n,  File \"/src/ogc/bblocks/validate.py\", line 503, in validate_inner\n    'errorMessage': e.message,\n,AttributeError: 'RefResolutionError' object has no attribute 'message'\n"
+    }
+  },
   "counts": {
     "total": 1,
-    "passed": 1,
-    "failed": 0
+    "passed": 0,
+    "failed": 1
   }
 }

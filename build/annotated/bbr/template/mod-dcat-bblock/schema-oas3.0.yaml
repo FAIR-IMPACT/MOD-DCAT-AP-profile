@@ -2,7 +2,7 @@ x-defs:
   ogc.bbr.template.mod-dcat-bblock:
     description: Schema for the MOD-DCAT-Profile building block
     $defs:
-      SemanticArtefact:
+      mod:SemanticArtefact:
         type: object
         properties:
           mod:acronym:
@@ -12,8 +12,15 @@ x-defs:
         required:
         - mod:acronym
         - dct:title
+      mod:SemanticArtefactDistribution:
+        type: object
+        properties:
+          mod:hasSyntax:
+            type: string
+          mod:hasRepresentationLanguage:
+            type: string
     anyOf:
-    - $ref: '#/$defs/SemanticArtefact'
+    - $ref: '#/$defs/mod:SemanticArtefact'
     x-jsonld-prefixes:
       mod: https://w3id.org/mod#
       rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
