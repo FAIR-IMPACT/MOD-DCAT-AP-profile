@@ -359,11 +359,11 @@
 
 <p class="status">
     <span data-rainbow-uri="http://www.opengis.net/def/status">Status</span>:
-    <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
+    <a href="http://www.opengis.net/def/status/invalid" target="_blank" data-rainbow-uri>Invalid</a>
 </p>
 
-<aside class="success">
-This building block is <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/" target="_blank">valid</a></strong>
+<aside class="warning">
+Validation for this building block has <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/" target="_blank">failed</a></strong>
 </aside>
 <h1 id='description'>Description</h1><h2 id='mod-dcat-profile'>MOD-DCAT-Profile</h2>
 <p>This is the representation of the DCAT Profile for MOD. This document provides a human-readable description of the Profile.</p>
@@ -409,18 +409,25 @@ This building block is <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-
 <h1 id='json-schema'>JSON Schema</h1><div class="highlight"><pre class="highlight yaml tab-yaml--schema"><code><span class="na">$schema</span><span class="pi">:</span> <span class="s">https://json-schema.org/draft/2020-12/schema</span>
 <span class="na">description</span><span class="pi">:</span> <span class="s">Schema for the MOD-DCAT-Profile building block</span>
 <span class="na">$defs</span><span class="pi">:</span>
-  <span class="na">SemanticArtefact</span><span class="pi">:</span>
-    <span class="na">type</span><span class="pi">:</span> <span class="s">object</span>
-    <span class="na">properties</span><span class="pi">:</span>
+  <span class="s">mod:SemanticArtefact:</span>
+    <span class="s">type</span><span class="err">:</span> <span class="s">object</span>
+    <span class="s">properties</span><span class="err">:</span>
       <span class="s">mod:acronym:</span>
         <span class="s">type</span><span class="err">:</span> <span class="s">string</span>
       <span class="s">dct:title:</span>
         <span class="s">type</span><span class="err">:</span> <span class="s">string</span>
-    <span class="na">required</span><span class="pi">:</span>
+    <span class="s">required</span><span class="err">:</span>
     <span class="pi">-</span> <span class="s">mod:acronym</span>
     <span class="pi">-</span> <span class="s">dct:title</span>
+  <span class="s">mod:SemanticArtefactDistribution:</span>
+    <span class="s">type</span><span class="err">:</span> <span class="s">object</span>
+    <span class="s">properties</span><span class="err">:</span>
+      <span class="s">mod:hasSyntax:</span>
+        <span class="s">type</span><span class="err">:</span> <span class="s">string</span>
+      <span class="s">mod:hasRepresentationLanguage:</span>
+        <span class="s">type</span><span class="err">:</span> <span class="s">string</span>
 <span class="na">anyOf</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/SemanticArtefact'</span>
+<span class="pi">-</span> <span class="na">$ref</span><span class="pi">:</span> <span class="s1">'</span><span class="s">#/$defs/mod:SemanticArtefact'</span>
 <span class="na">x-jsonld-prefixes</span><span class="pi">:</span>
   <span class="na">mod</span><span class="pi">:</span> <span class="s">https://w3id.org/mod#</span>
   <span class="na">rdf</span><span class="pi">:</span> <span class="s">http://www.w3.org/1999/02/22-rdf-syntax-ns#</span>
