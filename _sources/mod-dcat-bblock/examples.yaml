@@ -5,4 +5,7 @@
   snippets:
     - language: json
       ref: examples/mod-ex1.json
-      schema-ref: "#/$defs/SemanticArtefact"
+      schema-ref: "#/$defs/mod:SemanticArtefact"
+    - language: json
+      ref: examples/mod-ex2.json
+      schema-ref: "#/$defs/mod:SemanticArtefact"
