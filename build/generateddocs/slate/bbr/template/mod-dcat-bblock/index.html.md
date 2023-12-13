@@ -67,18 +67,38 @@ This is the content of the example.
 
 
 
+```json
+{
+    "mod:acronym": "mySA",
+    "description": "my semantic artefact"    
+}
+  
+  
+  
+  
+```
+
+<blockquote class="lang-specific json">
+  <p class="example-links">
+    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-bblock%2Fexample_1_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+</blockquote>
+
+
+
+
 ```jsonld
 {
   "mod:acronym": "mySA",
-  "dct:title": "my semantic artefact",
+  "description": "my semantic artefact",
   "@context": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-bblock%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-bblock%2Fexample_1_2.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -86,17 +106,15 @@ This is the content of the example.
 
 ```turtle
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ns1: <dct:> .
 
-[] ns1:title "my semantic artefact" ;
-    mod:acronym "mySA" .
+[] mod:acronym "mySA" .
 
 
 ```
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.ttl">Open in new window</a>
 </blockquote>
 
 
