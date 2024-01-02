@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.template.mod-dcat-bblock - MOD-DCAT-Profile
-Generated 2023-12-13T14:15:03.757855+00:00
+Generated 2024-01-02T16:05:50.219184+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

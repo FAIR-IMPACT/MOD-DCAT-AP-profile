@@ -50,5 +50,7 @@
         }
       }
     }
-  ]
+  ],
+  "baseURL": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/",
+  "validationReport": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/report.html"
 }

@@ -2,14 +2,14 @@
   "title": "Validation report for ogc.bbr.template.mod-dcat-bblock - MOD-DCAT-Profile",
   "bblockName": "MOD-DCAT-Profile",
   "bblockId": "ogc.bbr.template.mod-dcat-bblock",
-  "generated": "2023-12-13T14:15:03.761541+00:00",
+  "generated": "2024-01-02T16:05:50.222757+00:00",
   "result": false,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-bblock/example_1_1.json",
+        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"
@@ -93,7 +93,7 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-bblock/example_1_2.json",
+        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.json",
         "exampleIndex": 1,
         "snippetIndex": 2,
         "language": "json"

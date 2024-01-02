@@ -43,8 +43,6 @@ This is the representation of the DCAT Profile for MOD. This document provides a
 
 ## Examples of MOD descriptions complying with the DCAT profile.
 
-This is the content of the example.
-
 
 
 ```json
@@ -117,6 +115,8 @@ This is the content of the example.
     <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.ttl">Open in new window</a>
 </blockquote>
 
+
+This is the content of the example.
 
 
 # JSON Schema
