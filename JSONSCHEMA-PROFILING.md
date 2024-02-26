@@ -8,15 +8,11 @@ The JSON Schema specification and tooling landscape is complex.  Versions of the
 
 In particular, reuse mechanisms such as $dynamicRef may not be available.
 
-<<<<<<< HEAD
-## Current state of play
-=======
 ## Version-agnostic Building Blocks
 
 The Building Block post-processing tooling automatically generates OAS 3.0 and OAS 3.1 compatible schemas. It is recommended to develop new building blocks using improved modularity and reuse support in modern schema versions, and allow the Building Block to create a "down-compiled version".
 
 ## OAS 3.0 Compatibility
->>>>>>> template/master
 
 OGC APIs are currently bound to OAS v3.0 which limits JSON schema patterns that can be supported.
 
