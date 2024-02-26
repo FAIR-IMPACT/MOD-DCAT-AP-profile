@@ -1,87 +1,137 @@
 {
-  "@context": {
-    "bblocks": "https://www.opengis.net/def/bblocks/",
-    "@base": "https://www.opengis.net/def/bblocks/",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "skos": "http://www.w3.org/2004/02/skos/core#",
-    "dct": "http://purl.org/dc/terms/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "itemIdentifier": "@id",
-    "name": "rdfs:label",
-    "abstract": "dct:abstract",
-    "status": {
-      "@id": "bblocks:status",
-      "@type": "@id",
-      "@context": {
-        "@base": "http://www.opengis.net/def/status/"
+  "@context": [
+    {
+      "@base": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile"
+    },
+    {
+      "bblocks": "https://www.opengis.net/def/bblocks/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "dct": "http://purl.org/dc/terms/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "prof": "http://www.w3.org/ns/dx/prof/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "itemIdentifier": "@id",
+      "baseURL": "@id",
+      "name": "rdfs:label",
+      "abstract": "dct:abstract",
+      "description": "dct:description",
+      "status": {
+        "@id": "bblocks:status",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/status/"
+        }
+      },
+      "dateTimeAddition": {
+        "@id": "dct:created",
+        "@type": "xsd:dateTime"
+      },
+      "version": "dct:hasVersion",
+      "dateOfLastChange": {
+        "@id": "dct:modified",
+        "@type": "xsd:date"
+      },
+      "scope": {
+        "@id": "bblocks:scope",
+        "@type": "@id",
+        "@context": {
+          "@base": "http://www.opengis.net/def/bblocks/scope/"
+        }
+      },
+      "sources": {
+        "@id": "dct:source",
+        "@context": {
+          "title": "rdfs:label",
+          "link": "@id"
+        }
+      },
+      "schema": {
+        "@id": "bblocks:hasSchema",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "dct:format"
+      },
+      "ldContext": {
+        "@id": "bblocks:hasJsonLdContext",
+        "@type": "@id"
+      },
+      "sourceLdContext": {
+        "@id": "bblocks:hasSourceJsonLdContext",
+        "@type": "@id"
+      },
+      "documentation": {
+        "@id": "dct:description",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "dct:identifier",
+        "@context": {
+          "mediatype": "dct:format",
+          "url": "rdfs:isDefinedBy"
+        }
+      },
+      "hasConcepts": {
+        "@reverse": "skos:inScheme"
+      },
+      "dependsOn": {
+        "@id": "bblocks:dependsOn",
+        "@type": "@id"
+      },
+      "profileOf": {
+        "@id": "prof:isProfileOf",
+        "@type": "@id"
+      },
+      "tags": "dcat:keyword",
+      "shaclRules": {
+        "@id": "bblocks:hasShaclRule",
+        "@type": "@id",
+        "@container": "@index",
+        "@index": "rdfs:seeAlso"
+      },
+      "validationReport": {
+        "@id": "bblocks:hasValidationReport",
+        "@type": "@id"
+      },
+      "imports": {
+        "@id": "bblocks:imports",
+        "@type": "@id"
       }
-    },
-    "dateTimeAddition": {
-      "@id": "dct:created",
-      "@type": "xsd:dateTime"
-    },
-    "version": "dct:hasVersion",
-    "dateOfLastChange": {
-      "@id": "dct:modified",
-      "@type": "xsd:date"
-    },
-    "scope": {
-      "@id": "bblocks:scope",
-      "@type": "@id",
-      "@context": {
-        "@base": "http://www.opengis.net/def/bblocks/scope/"
-      }
-    },
-    "sources": {
-      "@id": "dct:source",
-      "@context": {
-        "title": "rdfs:label",
-        "link": "@id"
-      }
-    },
-    "schema": {
-      "@id": "bblocks:hasSchema",
-      "@type": "@id",
-      "@container": "@index",
-      "@index": "dct:format"
-    },
-    "ldContext": {
-      "@id": "bblocks:hasJsonLdContext",
-      "@type": "@id"
-    },
-    "documentation": {
-      "@id": "dct:description",
-      "@type": "@id",
-      "@container": "@index",
-      "@index": "dct:identifier",
-      "@context": {
-        "mediatype": "dct:format",
-        "url": "rdfs:isDefinedBy"
-      }
-    },
-    "hasConcepts": {
-      "@reverse": "skos:inScheme"
-    },
-    "dependsOn": {
-      "@id": "bblocks:dependsOn",
-      "@type": "@id"
+    }
+  ],
+  "modified": "2024-02-26T12:02:32.817403",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"511c71377d2cb8187d14b5ba55aea1eb84c03d40",
+      "shortCommitId": "\"511c71",
+      "date": "2024-02-19T19:40:19+00:00\""
     }
   },
-  "@id": "https://www.opengis.net/def/bblocks",
-  "@type": "skos:ConceptScheme",
-  "skos:prefLabel": "OGC Building Blocks Register",
+  "gitRepository": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile",
+  "gitHubRepository": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/",
+  "name": "workspace",
+  "baseURL": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/",
+  "viewerURL": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/",
+  "validationReport": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/report.html",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json"
+  ],
+  "@type": [
+    "skos:ConceptScheme",
+    "dcat:Catalog"
+  ],
+  "skos:prefLabel": "workspace",
   "hasConcepts": [
     {
-      "itemIdentifier": "ogc.bbr.template.mod-dcat-bblock",
+      "itemIdentifier": "ogc.bbr.template.mod-dcat-ap-bblock",
       "$schema": "https://raw.githubusercontent.com/opengeospatial/bblocks-postprocess/master/ogc/bblocks/metadata-schema.yaml",
       "name": "MOD-DCAT-Profile",
       "abstract": "This Building Block is the DCAT Profile for the MOD ontology",
-      "status": "invalid",
+      "status": "under-development",
       "dateTimeAddition": "2023-12-12T00:00:00Z",
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-12-12",
+      "dateOfLastChange": "2024-02-26",
       "link": "https://github.com/opengeospatial/bblock-template",
       "sources": [
         {
@@ -95,31 +145,38 @@
         "templates"
       ],
       "shaclRules": {},
+      "ldContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld",
       "schema": {
-        "application/yaml": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/schema.yaml",
-        "application/json": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/schema.json"
+        "application/yaml": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml",
+        "application/json": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json"
       },
-      "ldContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld",
-      "sourceFiles": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-bblock/",
+      "sourceLdContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-ap-bblock/context.jsonld",
+      "sourceSchema": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-ap-bblock/schema.json",
+      "sourceFiles": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-ap-bblock/",
       "validationPassed": false,
-      "testOutputs": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/",
+      "testOutputs": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-ap-bblock/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/json-full/bbr/template/mod-dcat-bblock/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/markdown/bbr/template/mod-dcat-bblock/index.md"
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/markdown/bbr/template/mod-dcat-ap-bblock/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/json-full/bbr/template/mod-dcat-ap-bblock/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/slate-build/bbr/template/mod-dcat-bblock/"
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/slate-build/bbr/template/mod-dcat-ap-bblock/"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/bblock/ogc.bbr.template.mod-dcat-ap-bblock"
         }
       },
       "@type": [
         "bblocks:Schema",
-        "skos:Concept"
+        "skos:Concept",
+        "dcat:Dataset"
       ]
     }
   ]

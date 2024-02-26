@@ -1,5 +1,5 @@
 x-defs:
-  ogc.bbr.template.mod-dcat-bblock:
+  ogc.bbr.template.mod-dcat-ap-bblock:
     description: Schema for the MOD-DCAT-Profile building block
     $defs:
       mod:SemanticArtefact:
@@ -9,9 +9,12 @@ x-defs:
             type: string
           dct:title:
             type: string
+          dcat:landingPage:
+            type: string
         required:
         - mod:acronym
         - dct:title
+        - dcat:landingPage
       mod:SemanticArtefactDistribution:
         type: object
         properties:
@@ -20,13 +23,13 @@ x-defs:
           mod:hasRepresentationLanguage:
             type: string
     anyOf:
-    - $ref: '#/$defs/mod:SemanticArtefact'
+    - $ref: https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema-oas3.0.yaml#/x-defs/ogc.bbr.template.mod-dcat-ap-bblock/$defs/mod:SemanticArtefact
     x-jsonld-prefixes:
       mod: https://w3id.org/mod#
       rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
       rdfs: http://www.w3.org/2000/01/rdf-schema#
       xsd: http://www.w3.org/2001/XMLSchema#
     x-schema-version: https://json-schema.org/draft/2020-12/schema
-    x-schema-source: https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/schema-oas3.0.yaml
+    x-schema-source: https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema-oas3.0.yaml
 allOf:
-- $ref: https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/schema-oas3.0.yaml#/x-defs/ogc.bbr.template.mod-dcat-bblock
+- $ref: https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema-oas3.0.yaml#/x-defs/ogc.bbr.template.mod-dcat-ap-bblock

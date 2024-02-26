@@ -1,5 +1,5 @@
-Validation report for ogc.bbr.template.mod-dcat-bblock - MOD-DCAT-Profile
-Generated 2024-01-02T16:05:50.222703+00:00
+Validation report for ogc.bbr.template.mod-dcat-ap-bblock - MOD-DCAT-Profile
+Generated 2024-02-26T12:02:33.278369+00:00
 === Files ===
 Using example_1_2.json from examples
 JSON-LD context is present - uplifting
@@ -14,9 +14,10 @@ Using the following JSON Schema: #/$defs/mod:SemanticArtefact
 ValidationError: 'dct:title' is a required property
 
 Failed validating 'required' in schema:
-    {'properties': {'dct:title': {'type': 'string'},
+    {'properties': {'dcat:landingPage': {'type': 'string'},
+                    'dct:title': {'type': 'string'},
                     'mod:acronym': {'type': 'string'}},
-     'required': ['mod:acronym', 'dct:title'],
+     'required': ['mod:acronym', 'dct:title', 'dcat:landingPage'],
      'type': 'object'}
 
 On instance:

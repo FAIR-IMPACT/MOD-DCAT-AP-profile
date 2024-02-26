@@ -1,5 +1,0 @@
-{
-  "mod:acronym": "mySA",
-  "dct:title": "my semantic artefact",
-  "@context": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld"
-}

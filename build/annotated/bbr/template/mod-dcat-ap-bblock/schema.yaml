@@ -8,9 +8,12 @@ $defs:
         type: string
       dct:title:
         type: string
+      dcat:landingPage:
+        type: string
     required:
     - mod:acronym
     - dct:title
+    - dcat:landingPage
   mod:SemanticArtefactDistribution:
     type: object
     properties:

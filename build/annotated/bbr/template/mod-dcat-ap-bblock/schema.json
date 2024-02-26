@@ -10,11 +10,15 @@
         },
         "dct:title": {
           "type": "string"
+        },
+        "dcat:landingPage": {
+          "type": "string"
         }
       },
       "required": [
         "mod:acronym",
-        "dct:title"
+        "dct:title",
+        "dcat:landingPage"
       ]
     },
     "mod:SemanticArtefactDistribution": {

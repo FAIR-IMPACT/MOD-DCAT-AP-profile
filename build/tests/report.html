@@ -26,7 +26,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2024-01-02T16:05:50.234925+00:00</small>
+            <small class="datetime">Generated at 2024-02-26T12:02:33.291180+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 0 / 1 (0%)
                 </p>
@@ -35,24 +35,24 @@
                 <a href="#" class="collapse-all">Collapse all</a>
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.template.mod-dcat-bblock" id="bblock-0">
+                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.template.mod-dcat-ap-bblock" id="bblock-0">
                             <h2 class="accordion-header bblock-title">
                                 <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#bblock-collapse-0">
                                     <div class="flex-fill">
                                         MOD-DCAT-Profile
-                                        <small class="ms-2 bblock-id">ogc.bbr.template.mod-dcat-bblock</small>
+                                        <small class="ms-2 bblock-id">ogc.bbr.template.mod-dcat-ap-bblock</small>
                                     </div>
 
                                     <span class="badge text-bg-danger me-2">
                                             Tests Failed
-                                            (50% passed)
+                                            (0% passed)
                                     </span>
                                 </button>
                             </h2>
                             <div class="accordion-collapse collapse show" id="bblock-collapse-0">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-danger">
-                                            Test passed: 1 / 2
+                                            Test passed: 0 / 2
                                         </p>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
@@ -64,10 +64,10 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-1">
@@ -79,7 +79,17 @@
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema ">Using the following JSON Schema: #/$defs/mod:SemanticArtefact</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;dcat:landingPage&#x27; is a required property
+
+Failed validating &#x27;required&#x27; in schema:
+    {&#x27;properties&#x27;: {&#x27;dcat:landingPage&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
+                    &#x27;dct:title&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
+                    &#x27;mod:acronym&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;}},
+     &#x27;required&#x27;: [&#x27;mod:acronym&#x27;, &#x27;dct:title&#x27;, &#x27;dcat:landingPage&#x27;],
+     &#x27;type&#x27;: &#x27;object&#x27;}
+
+On instance:
+    {&#x27;dct:title&#x27;: &#x27;my semantic artefact&#x27;, &#x27;mod:acronym&#x27;: &#x27;mySA&#x27;}</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -94,7 +104,7 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.json" target="_blank">example_1_2.json</a>
+                                                    <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.json" target="_blank">example_1_2.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
                                                             <span class="badge text-bg-danger me-2">Failed</span>
@@ -112,9 +122,10 @@
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;dct:title&#x27; is a required property
 
 Failed validating &#x27;required&#x27; in schema:
-    {&#x27;properties&#x27;: {&#x27;dct:title&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
+    {&#x27;properties&#x27;: {&#x27;dcat:landingPage&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
+                    &#x27;dct:title&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;mod:acronym&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;}},
-     &#x27;required&#x27;: [&#x27;mod:acronym&#x27;, &#x27;dct:title&#x27;],
+     &#x27;required&#x27;: [&#x27;mod:acronym&#x27;, &#x27;dct:title&#x27;, &#x27;dcat:landingPage&#x27;],
      &#x27;type&#x27;: &#x27;object&#x27;}
 
 On instance:

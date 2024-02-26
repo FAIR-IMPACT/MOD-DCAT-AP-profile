@@ -1,3 +1,0 @@
-path	@id
-anyOf[0]/$ref[#/$defs/mod:SemanticArtefact]/properties/mod:acronym	
-anyOf[0]/$ref[#/$defs/mod:SemanticArtefact]/properties/dct:title	

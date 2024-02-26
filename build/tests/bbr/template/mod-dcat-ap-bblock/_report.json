@@ -1,20 +1,20 @@
 {
-  "title": "Validation report for ogc.bbr.template.mod-dcat-bblock - MOD-DCAT-Profile",
+  "title": "Validation report for ogc.bbr.template.mod-dcat-ap-bblock - MOD-DCAT-Profile",
   "bblockName": "MOD-DCAT-Profile",
-  "bblockId": "ogc.bbr.template.mod-dcat-bblock",
-  "generated": "2024-01-02T16:05:50.222757+00:00",
+  "bblockId": "ogc.bbr.template.mod-dcat-ap-bblock",
+  "generated": "2024-02-26T12:02:33.278421+00:00",
   "result": false,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.json",
+        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"
       },
-      "result": true,
+      "result": false,
       "sections": [
         {
           "name": "GENERAL",
@@ -61,9 +61,11 @@
             },
             {
               "op": "validation",
-              "result": true,
-              "isError": false,
-              "message": "Validation passed"
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'dcat:landingPage' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'dcat:landingPage' is a required property\n\nFailed validating 'required' in schema:\n    {'properties': {'dcat:landingPage': {'type': 'string'},\n                    'dct:title': {'type': 'string'},\n                    'mod:acronym': {'type': 'string'}},\n     'required': ['mod:acronym', 'dct:title', 'dcat:landingPage'],\n     'type': 'object'}\n\nOn instance:\n    {'dct:title': 'my semantic artefact', 'mod:acronym': 'mySA'}"
             }
           ]
         },
@@ -93,7 +95,7 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.json",
+        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.json",
         "exampleIndex": 1,
         "snippetIndex": 2,
         "language": "json"
@@ -149,7 +151,7 @@
               "exception": "ValidationError",
               "errorMessage": "'dct:title' is a required property",
               "isError": true,
-              "message": "ValidationError: 'dct:title' is a required property\n\nFailed validating 'required' in schema:\n    {'properties': {'dct:title': {'type': 'string'},\n                    'mod:acronym': {'type': 'string'}},\n     'required': ['mod:acronym', 'dct:title'],\n     'type': 'object'}\n\nOn instance:\n    {'description': 'my semantic artefact', 'mod:acronym': 'mySA'}"
+              "message": "ValidationError: 'dct:title' is a required property\n\nFailed validating 'required' in schema:\n    {'properties': {'dcat:landingPage': {'type': 'string'},\n                    'dct:title': {'type': 'string'},\n                    'mod:acronym': {'type': 'string'}},\n     'required': ['mod:acronym', 'dct:title', 'dcat:landingPage'],\n     'type': 'object'}\n\nOn instance:\n    {'description': 'my semantic artefact', 'mod:acronym': 'mySA'}"
             }
           ]
         },
@@ -179,7 +181,7 @@
   "globalErrors": {},
   "counts": {
     "total": 2,
-    "passed": 1,
-    "failed": 1
+    "passed": 0,
+    "failed": 2
   }
 }
