@@ -104,13 +104,13 @@
       "validationPassed": false,
       "testOutputs": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-bblock/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/markdown/bbr/template/mod-dcat-bblock/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/json-full/bbr/template/mod-dcat-bblock/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/markdown/bbr/template/mod-dcat-bblock/index.md"
         },
         "slate": {
           "mediatype": "text/html",

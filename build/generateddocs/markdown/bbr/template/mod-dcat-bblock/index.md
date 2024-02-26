@@ -29,11 +29,23 @@ This is the content of the example.
   
 ```
 
+#### json
+```json
+{
+    "mod:acronym": "mySA",
+    "description": "my semantic artefact"    
+}
+  
+  
+  
+  
+```
+
 #### jsonld
 ```jsonld
 {
   "mod:acronym": "mySA",
-  "dct:title": "my semantic artefact",
+  "description": "my semantic artefact",
   "@context": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld"
 }
 ```
@@ -41,10 +53,8 @@ This is the content of the example.
 #### ttl
 ```ttl
 @prefix mod: <https://w3id.org/mod#> .
-@prefix ns1: <dct:> .
 
-[] ns1:title "my semantic artefact" ;
-    mod:acronym "mySA" .
+[] mod:acronym "mySA" .
 
 
 ```

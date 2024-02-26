@@ -1,0 +1,25 @@
+Validation report for ogc.bbr.template.mod-dcat-bblock - MOD-DCAT-Profile
+Generated 2024-01-02T16:05:50.222703+00:00
+=== Files ===
+Using example_1_2.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_1_2.jsonld created
+Output Turtle example_1_2.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Using the following JSON Schema: #/$defs/mod:SemanticArtefact
+
+** Validation error **
+ValidationError: 'dct:title' is a required property
+
+Failed validating 'required' in schema:
+    {'properties': {'dct:title': {'type': 'string'},
+                    'mod:acronym': {'type': 'string'}},
+     'required': ['mod:acronym', 'dct:title'],
+     'type': 'object'}
+
+On instance:
+    {'description': 'my semantic artefact', 'mod:acronym': 'mySA'}
+=== End JSON Schema ===
+

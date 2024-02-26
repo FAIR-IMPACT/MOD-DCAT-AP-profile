@@ -6,6 +6,8 @@ This repository provides a representation of the MOD DCAT Profile based on the O
 
 [MOD-DCAT-Profile Documentation](https://fair-impact.github.io/MOD-DCAT-profile/build/generateddocs/slate-build/bbr/template/mod-dcat-bblock/)
 
+[MOD-DCAT-Profile Test reports](https://fair-impact.github.io/MOD-DCAT-profile/build/tests/report.html)
+
 [Examples of using this with typical applications of OGC standards](https://github.com/ogcincubator/bblocks-examples)
 
 

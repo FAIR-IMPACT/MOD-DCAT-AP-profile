@@ -26,7 +26,7 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2023-12-13T13:11:10.037042+00:00</small>
+            <small class="datetime">Generated at 2024-01-02T16:05:50.234925+00:00</small>
                 <p class="summary fw-semibold text-danger">
                     Number of passing building blocks: 0 / 1 (0%)
                 </p>
@@ -45,62 +45,15 @@
 
                                     <span class="badge text-bg-danger me-2">
                                             Tests Failed
-                                            (0% passed)
+                                            (50% passed)
                                     </span>
                                 </button>
                             </h2>
                             <div class="accordion-collapse collapse show" id="bblock-collapse-0">
                                 <div class="accordion-body">
                                         <p class="summary fw-semibold text-danger">
-                                            Test passed: 0 / 1
+                                            Test passed: 1 / 2
                                         </p>
-                                        <div class="card mb-2 global-validation-item validation-item">
-                                            <div class="card-body">
-                                                <div class="card-title">
-                                                    Building block global validation errors
-                                                    <div class="float-end">
-                                                        <span class="badge text-bg-danger me-2">Failed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text text-danger">
-                                                        <div class="font-monospace entry-message section-unknown">Traceback (most recent call last):
-,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 966, in resolve_fragment
-    document = document[part]
-,KeyError: &#x27;SemanticArtefact&#x27;
-,
-During handling of the above exception, another exception occurred:
-
-,Traceback (most recent call last):
-,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 483, in validate_inner
-    validate_json(json_doc, schema_validator)
-,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 842, in validate_json
-    error = jsonschema.exceptions.best_match(validator.iter_errors(instance))
-,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/exceptions.py&quot;, line 384, in best_match
-    best = next(errors, None)
-,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 288, in iter_errors
-    for error in errors:
-,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/_validators.py&quot;, line 294, in ref
-    scope, resolved = validator.resolver.resolve(ref)
-,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 898, in resolve
-    return url, self._remote_cache(url)
-,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 916, in resolve_from_url
-    return self.resolve_fragment(document, fragment)
-,  File &quot;/venv/lib/python3.10/site-packages/jsonschema/validators.py&quot;, line 968, in resolve_fragment
-    raise exceptions.RefResolutionError(
-,jsonschema.exceptions.RefResolutionError: Unresolvable JSON pointer: &#x27;$defs/SemanticArtefact&#x27;
-,
-During handling of the above exception, another exception occurred:
-
-,Traceback (most recent call last):
-,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 606, in _validate_resource
-    validate_inner()
-,  File &quot;/src/ogc/bblocks/validate.py&quot;, line 503, in validate_inner
-    &#x27;errorMessage&#x27;: e.message,
-,AttributeError: &#x27;RefResolutionError&#x27; object has no attribute &#x27;message&#x27;
-</div>
-                                                </div>
-                                            </div>
-                                        </div>
                                         <div class="card mb-2 validation-item ">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
@@ -111,22 +64,61 @@ During handling of the above exception, another exception occurred:
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-bblock/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.json" target="_blank">example_1_1.json</a>
                                                     <span class="badge bg-secondary example">Example</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-1">
                                                     <div class="validation-text-inner">
-                                                            <div class="font-monospace entry-message text-danger">Note: Test failed because there are global validation errors.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                     <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
                                                                     <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
                                                                     <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Using the following JSON Schema: #/$defs/SemanticArtefact</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Using the following JSON Schema: #/$defs/mod:SemanticArtefact</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
+                                                            aria-expanded="false" aria-controls="uid-2"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.json" target="_blank">example_1_2.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_2.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_2.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_2.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Using the following JSON Schema: #/$defs/mod:SemanticArtefact</div>
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;dct:title&#x27; is a required property
+
+Failed validating &#x27;required&#x27; in schema:
+    {&#x27;properties&#x27;: {&#x27;dct:title&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
+                    &#x27;mod:acronym&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;}},
+     &#x27;required&#x27;: [&#x27;mod:acronym&#x27;, &#x27;dct:title&#x27;],
+     &#x27;type&#x27;: &#x27;object&#x27;}
+
+On instance:
+    {&#x27;description&#x27;: &#x27;my semantic artefact&#x27;, &#x27;mod:acronym&#x27;: &#x27;mySA&#x27;}</div>
                                                     </div>
                                                 </div>
                                             </div>

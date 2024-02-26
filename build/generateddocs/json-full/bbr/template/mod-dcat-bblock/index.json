@@ -41,19 +41,26 @@
         {
           "language": "json",
           "ref": "examples/mod-ex1.json",
-          "schema-ref": "#/$defs/SemanticArtefact",
+          "schema-ref": "#/$defs/mod:SemanticArtefact",
           "code": "{\n    \"mod:acronym\": \"mySA\",\n    \"dct:title\": \"my semantic artefact\"    \n}\n  \n  \n  \n  ",
           "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.json"
         },
         {
+          "language": "json",
+          "ref": "examples/mod-ex2.json",
+          "schema-ref": "#/$defs/mod:SemanticArtefact",
+          "code": "{\n    \"mod:acronym\": \"mySA\",\n    \"description\": \"my semantic artefact\"    \n}\n  \n  \n  \n  ",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.json"
+        },
+        {
           "language": "jsonld",
-          "code": "{\n  \"mod:acronym\": \"mySA\",\n  \"dct:title\": \"my semantic artefact\",\n  \"@context\": \"https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld\"\n}",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.jsonld"
+          "code": "{\n  \"mod:acronym\": \"mySA\",\n  \"description\": \"my semantic artefact\",\n  \"@context\": \"https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-bblock/context.jsonld\"\n}",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.jsonld"
         },
         {
           "language": "ttl",
-          "code": "@prefix mod: <https://w3id.org/mod#> .\n@prefix ns1: <dct:> .\n\n[] ns1:title \"my semantic artefact\" ;\n    mod:acronym \"mySA\" .\n\n",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.ttl"
+          "code": "@prefix mod: <https://w3id.org/mod#> .\n\n[] mod:acronym \"mySA\" .\n\n",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.ttl"
         }
       ]
     }

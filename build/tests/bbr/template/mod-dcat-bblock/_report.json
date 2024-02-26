@@ -2,19 +2,19 @@
   "title": "Validation report for ogc.bbr.template.mod-dcat-bblock - MOD-DCAT-Profile",
   "bblockName": "MOD-DCAT-Profile",
   "bblockId": "ogc.bbr.template.mod-dcat-bblock",
-  "generated": "2023-12-13T13:11:10.023866+00:00",
+  "generated": "2024-01-02T16:05:50.222757+00:00",
   "result": false,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-bblock/example_1_1.json",
+        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"
       },
-      "result": false,
+      "result": true,
       "sections": [
         {
           "name": "GENERAL",
@@ -55,9 +55,101 @@
           "title": "JSON Schema",
           "entries": [
             {
-              "filename": "#/$defs/SemanticArtefact",
+              "filename": "#/$defs/mod:SemanticArtefact",
               "isError": false,
-              "message": "Using the following JSON Schema: #/$defs/SemanticArtefact"
+              "message": "Using the following JSON Schema: #/$defs/mod:SemanticArtefact"
+            },
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-bblock/example_1_2.json",
+        "exampleIndex": 1,
+        "snippetIndex": 2,
+        "language": "json"
+      },
+      "result": false,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_2.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_2.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_2.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_2.ttl",
+              "size": 1,
+              "isError": false,
+              "message": "Output Turtle example_1_2.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "filename": "#/$defs/mod:SemanticArtefact",
+              "isError": false,
+              "message": "Using the following JSON Schema: #/$defs/mod:SemanticArtefact"
+            },
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'dct:title' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'dct:title' is a required property\n\nFailed validating 'required' in schema:\n    {'properties': {'dct:title': {'type': 'string'},\n                    'mod:acronym': {'type': 'string'}},\n     'required': ['mod:acronym', 'dct:title'],\n     'type': 'object'}\n\nOn instance:\n    {'description': 'my semantic artefact', 'mod:acronym': 'mySA'}"
             }
           ]
         },
@@ -84,16 +176,10 @@
       ]
     }
   ],
-  "globalErrors": {
-    "UNKNOWN": {
-      "exception": "AttributeError",
-      "isError": true,
-      "message": "Traceback (most recent call last):\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 966, in resolve_fragment\n    document = document[part]\n,KeyError: 'SemanticArtefact'\n,\nDuring handling of the above exception, another exception occurred:\n\n,Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 483, in validate_inner\n    validate_json(json_doc, schema_validator)\n,  File \"/src/ogc/bblocks/validate.py\", line 842, in validate_json\n    error = jsonschema.exceptions.best_match(validator.iter_errors(instance))\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/exceptions.py\", line 384, in best_match\n    best = next(errors, None)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 288, in iter_errors\n    for error in errors:\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/_validators.py\", line 294, in ref\n    scope, resolved = validator.resolver.resolve(ref)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 898, in resolve\n    return url, self._remote_cache(url)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 916, in resolve_from_url\n    return self.resolve_fragment(document, fragment)\n,  File \"/venv/lib/python3.10/site-packages/jsonschema/validators.py\", line 968, in resolve_fragment\n    raise exceptions.RefResolutionError(\n,jsonschema.exceptions.RefResolutionError: Unresolvable JSON pointer: '$defs/SemanticArtefact'\n,\nDuring handling of the above exception, another exception occurred:\n\n,Traceback (most recent call last):\n,  File \"/src/ogc/bblocks/validate.py\", line 606, in _validate_resource\n    validate_inner()\n,  File \"/src/ogc/bblocks/validate.py\", line 503, in validate_inner\n    'errorMessage': e.message,\n,AttributeError: 'RefResolutionError' object has no attribute 'message'\n"
-    }
-  },
+  "globalErrors": {},
   "counts": {
-    "total": 1,
-    "passed": 0,
+    "total": 2,
+    "passed": 1,
     "failed": 1
   }
 }
