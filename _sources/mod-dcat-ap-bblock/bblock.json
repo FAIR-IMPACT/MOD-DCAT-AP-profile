@@ -8,11 +8,11 @@
   "register": "ogc-building-block-register",
   "version": "0.1",
   "dateOfLastChange": "2023-12-12",
-  "link": "https://github.com/opengeospatial/bblock-template",
+  "link": "https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile/",
   "sources": [
     {
-      "title": "Sample source document",
-      "link": "https://example.com/sources/1"
+      "title": "MOD Ontology",
+      "link": "https://github.com/fair-IMPACT/mod"
     }
   ],
   "maturity": "mature",

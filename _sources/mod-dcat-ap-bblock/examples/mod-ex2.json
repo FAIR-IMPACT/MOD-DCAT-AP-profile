@@ -1,8 +1,4 @@
 {
-    "mod:acronym": "mySA",
-    "description": "my semantic artefact"    
+    "mod:hasSyntax": "ttl",
+    "mod:hasRepresentationLanguage": "en"
 }
-  
-  
-  
-  
