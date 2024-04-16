@@ -1,5 +1,5 @@
 Validation report for ogc.bbr.template.mod-dcat-ap-bblock - MOD-DCAT-Profile
-Generated 2024-04-16T10:01:39.805055+00:00
+Generated 2024-04-16T12:42:37.632071+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===

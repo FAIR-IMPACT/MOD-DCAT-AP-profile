@@ -15,12 +15,12 @@
     dct:created "2023-12-12T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/generateddocs/markdown/bbr/template/mod-dcat-ap-bblock/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/generateddocs/json-full/bbr/template/mod-dcat-ap-bblock/index.json" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/generateddocs/slate-build/bbr/template/mod-dcat-ap-bblock/" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/bblock/ogc.bbr.template.mod-dcat-ap-bblock" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/generateddocs/json-full/bbr/template/mod-dcat-ap-bblock/index.json" ] ;
+            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/bblock/ogc.bbr.template.mod-dcat-ap-bblock" ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2024-04-16"^^xsd:date ;
     dct:source <https://github.com/fair-IMPACT/mod> ;
@@ -43,11 +43,11 @@
 <https://github.com/fair-IMPACT/mod> rdfs:label "MOD Ontology" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-04-16T10:01:39.885998"^^xsd:dateTime ;
-    prov:startedAtTime "2024-04-16T10:01:39.829131"^^xsd:dateTime ;
+    prov:endedAtTime "2024-04-16T12:42:37.714890"^^xsd:dateTime ;
+    prov:startedAtTime "2024-04-16T12:42:37.656816"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:98ac27b63eb3d8bce2d7b9b0a33d6f39030451c7" ;
+            dct:hasVersion "git:96143d9013db40af64d01472be2ad90d9946817e" ;
             rdfs:seeAlso <https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
