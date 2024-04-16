@@ -1,0 +1,6 @@
+@prefix ns1: <dcat:> .
+@prefix ns2: <dct:> .
+
+[] ns1:landingPage "https://example.org" ;
+    ns2:title "my semantic artefact" .
+

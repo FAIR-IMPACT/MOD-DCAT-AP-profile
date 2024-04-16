@@ -1,0 +1,13 @@
+Validation report for ogc.bbr.template.mod-dcat-ap-bblock - MOD-DCAT-Profile
+Generated 2024-04-16T10:01:39.806742+00:00
+=== Files ===
+Using pass.json from test resources
+JSON-LD context is present - uplifting
+Output JSON-LD pass.jsonld created
+Output Turtle pass.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

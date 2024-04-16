@@ -1,0 +1,8 @@
+@prefix mod: <https://w3id.org/mod#> .
+@prefix ns1: <dct:> .
+@prefix ns2: <dcat:> .
+
+[] ns2:landingPage "https://example.org" ;
+    ns1:title "my semantic artefact" ;
+    mod:acronym "mySA" .
+

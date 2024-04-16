@@ -13,48 +13,48 @@
     rdfs:label "MOD-DCAT-Profile" ;
     dct:abstract "This Building Block is the DCAT Profile for the MOD ontology" ;
     dct:created "2023-12-12T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/json-full/bbr/template/mod-dcat-ap-bblock/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/markdown/bbr/template/mod-dcat-ap-bblock/index.md" ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/generateddocs/markdown/bbr/template/mod-dcat-ap-bblock/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/bblock/ogc.bbr.template.mod-dcat-ap-bblock" ],
+            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/generateddocs/slate-build/bbr/template/mod-dcat-ap-bblock/" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/slate-build/bbr/template/mod-dcat-ap-bblock/" ] ;
+            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/bblock/ogc.bbr.template.mod-dcat-ap-bblock" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/generateddocs/json-full/bbr/template/mod-dcat-ap-bblock/index.json" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2024-02-26"^^xsd:date ;
-    dct:source <https://example.com/sources/1> ;
-    skos:inScheme <https://FAIR-IMPACT.github.io/MOD-DCAT-profile/> ;
+    dct:modified "2024-04-16"^^xsd:date ;
+    dct:source <https://github.com/fair-IMPACT/mod> ;
+    skos:inScheme <https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/> ;
     dcat:keyword "templates" ;
-    bblocks:hasJsonLdContext <https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld> ;
-    bblocks:hasSchema <https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json>,
-        <https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml> ;
-    bblocks:hasSourceJsonLdContext <https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-ap-bblock/context.jsonld> ;
+    bblocks:hasJsonLdContext <https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld> ;
+    bblocks:hasSchema <https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json>,
+        <https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
 
-<https://FAIR-IMPACT.github.io/MOD-DCAT-profile/> a skos:ConceptScheme,
+<https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/> a skos:ConceptScheme,
         dcat:Catalog ;
-    rdfs:label "workspace" ;
-    skos:prefLabel "workspace" ;
-    bblocks:hasValidationReport <https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/report.html> ;
+    rdfs:label "Building Blocks - workspace" ;
+    skos:prefLabel "Building Blocks - workspace" ;
+    bblocks:hasValidationReport <https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/report.html> ;
     bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
 
-<https://example.com/sources/1> rdfs:label "Sample source document" .
+<https://github.com/fair-IMPACT/mod> rdfs:label "MOD Ontology" .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2024-02-26T12:02:33.368575"^^xsd:dateTime ;
-    prov:startedAtTime "2024-02-26T12:02:33.291613"^^xsd:dateTime ;
+    prov:endedAtTime "2024-04-16T10:01:39.885998"^^xsd:dateTime ;
+    prov:startedAtTime "2024-04-16T10:01:39.829131"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:48c89bac404452aac2e68bbd8a7622927247c74b" ;
-            rdfs:seeAlso <https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/register.json> ],
+            dct:hasVersion "git:98ac27b63eb3d8bce2d7b9b0a33d6f39030451c7" ;
+            rdfs:seeAlso <https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/register.json> ],
         [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
-            dct:hasVersion "0.3.37" ;
+            dct:hasVersion "0.3.44" ;
             rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> ] .
 

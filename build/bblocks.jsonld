@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile"
+      "@base": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -11,6 +11,7 @@
       "xsd": "http://www.w3.org/2001/XMLSchema#",
       "prof": "http://www.w3.org/ns/dx/prof/",
       "dcat": "http://www.w3.org/ns/dcat#",
+      "modspec": "http://www.opengis.net/def/ont/modspec/",
       "itemIdentifier": "@id",
       "baseURL": "@id",
       "name": "rdfs:label",
@@ -95,23 +96,27 @@
       "imports": {
         "@id": "bblocks:imports",
         "@type": "@id"
+      },
+      "conformanceClasses": {
+        "@id": "modspec:class",
+        "@type": "@id"
       }
     }
   ],
-  "modified": "2024-02-26T12:02:32.817403",
+  "modified": "2024-04-16T10:01:39.433947",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"511c71377d2cb8187d14b5ba55aea1eb84c03d40",
-      "shortCommitId": "\"511c71",
-      "date": "2024-02-19T19:40:19+00:00\""
+      "commitId": "\"e4a611ba98dc47cf5ffb659b73d79151289b1133",
+      "shortCommitId": "\"e4a611",
+      "date": "2024-04-15T14:36:27+00:00\""
     }
   },
-  "gitRepository": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile",
-  "gitHubRepository": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/",
-  "name": "workspace",
-  "baseURL": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/",
-  "viewerURL": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/",
-  "validationReport": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/report.html",
+  "gitRepository": "https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile",
+  "gitHubRepository": "https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile/blob/master/",
+  "name": "Building Blocks - workspace",
+  "baseURL": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/",
+  "viewerURL": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/",
+  "validationReport": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/report.html",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
@@ -119,7 +124,7 @@
     "skos:ConceptScheme",
     "dcat:Catalog"
   ],
-  "skos:prefLabel": "workspace",
+  "skos:prefLabel": "Building Blocks - workspace",
   "hasConcepts": [
     {
       "itemIdentifier": "ogc.bbr.template.mod-dcat-ap-bblock",
@@ -131,12 +136,12 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-02-26",
-      "link": "https://github.com/opengeospatial/bblock-template",
+      "dateOfLastChange": "2024-04-16",
+      "link": "https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile/",
       "sources": [
         {
-          "title": "Sample source document",
-          "link": "https://example.com/sources/1"
+          "title": "MOD Ontology",
+          "link": "https://github.com/fair-IMPACT/mod"
         }
       ],
       "maturity": "mature",
@@ -145,32 +150,32 @@
         "templates"
       ],
       "shaclRules": {},
-      "ldContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld",
+      "ldContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld",
       "schema": {
-        "application/yaml": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml",
-        "application/json": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json"
+        "application/yaml": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml",
+        "application/json": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json"
       },
-      "sourceLdContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-ap-bblock/context.jsonld",
-      "sourceSchema": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-ap-bblock/schema.json",
-      "sourceFiles": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-ap-bblock/",
-      "validationPassed": false,
-      "testOutputs": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-ap-bblock/",
+      "sourceSchema": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/schema.json",
+      "sourceLdContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/context.jsonld",
+      "sourceFiles": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile/blob/master/build/tests/bbr/template/mod-dcat-ap-bblock/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/markdown/bbr/template/mod-dcat-ap-bblock/index.md"
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/generateddocs/markdown/bbr/template/mod-dcat-ap-bblock/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/json-full/bbr/template/mod-dcat-ap-bblock/index.json"
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/generateddocs/json-full/bbr/template/mod-dcat-ap-bblock/index.json"
         },
         "slate": {
           "mediatype": "text/html",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/generateddocs/slate-build/bbr/template/mod-dcat-ap-bblock/"
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/generateddocs/slate-build/bbr/template/mod-dcat-ap-bblock/"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/bblock/ogc.bbr.template.mod-dcat-ap-bblock"
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/bblock/ogc.bbr.template.mod-dcat-ap-bblock"
         }
       },
       "@type": [

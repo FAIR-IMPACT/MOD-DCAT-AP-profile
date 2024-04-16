@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html>
     <head>
@@ -26,9 +27,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2024-02-26T12:02:33.291180+00:00</small>
-                <p class="summary fw-semibold text-danger">
-                    Number of passing building blocks: 0 / 1 (0%)
+            <small class="datetime">Generated at 2024-04-16T10:01:39.828142+00:00</small>
+                <p class="summary fw-semibold text-success">
+                    Number of passing building blocks: 1 / 1 (100%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -37,24 +38,24 @@
                 <div class="accordion mt-2" id="bblock-reports">
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.template.mod-dcat-ap-bblock" id="bblock-0">
                             <h2 class="accordion-header bblock-title">
-                                <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#bblock-collapse-0">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bblock-collapse-0">
                                     <div class="flex-fill">
                                         MOD-DCAT-Profile
                                         <small class="ms-2 bblock-id">ogc.bbr.template.mod-dcat-ap-bblock</small>
                                     </div>
 
-                                    <span class="badge text-bg-danger me-2">
-                                            Tests Failed
-                                            (0% passed)
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (100% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse show" id="bblock-collapse-0">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-0">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-danger">
-                                            Test passed: 0 / 2
+                                        <p class="summary fw-semibold text-success">
+                                            Test passed: 6 / 6
                                         </p>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item require-fail">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
@@ -64,24 +65,69 @@
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_1.json" target="_blank">example_1_1.json</a>
-                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a href="../../_sources/mod-dcat-ap-bblock/tests/no-acronym-fail.json" target="_blank">no-acronym-fail.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
                                                 <div class="card-text mt-2 validation-text collapse" id="uid-1">
                                                     <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using no-acronym-fail.json from test resources</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD no-acronym-fail.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle no-acronym-fail.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Using the following JSON Schema: #/$defs/mod:SemanticArtefact</div>
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;mod:acronym&#x27; is a required property
+
+Failed validating &#x27;required&#x27; in schema[0]:
+    {&#x27;properties&#x27;: {&#x27;dcat:landingPage&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
+                    &#x27;dct:title&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
+                    &#x27;mod:acronym&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;}},
+     &#x27;required&#x27;: [&#x27;mod:acronym&#x27;, &#x27;dct:title&#x27;, &#x27;dcat:landingPage&#x27;],
+     &#x27;type&#x27;: &#x27;object&#x27;}
+
+On instance:
+    {&#x27;dcat:landingPage&#x27;: &#x27;https://example.org&#x27;,
+     &#x27;dct:title&#x27;: &#x27;my semantic artefact&#x27;}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item require-fail">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
+                                                            aria-expanded="false" aria-controls="uid-2"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/mod-dcat-ap-bblock/tests/no-landingpage-fail.json" target="_blank">no-landingpage-fail.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using no-landingpage-fail.json from test resources</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD no-landingpage-fail.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle no-landingpage-fail.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;dcat:landingPage&#x27; is a required property
 
-Failed validating &#x27;required&#x27; in schema:
+Failed validating &#x27;required&#x27; in schema[0]:
     {&#x27;properties&#x27;: {&#x27;dcat:landingPage&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;dct:title&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;mod:acronym&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;}},
@@ -94,34 +140,36 @@ On instance:
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="card mb-2 validation-item ">
+                                        <div class="card mb-2 validation-item require-fail">
                                             <div class="card-body">
                                                 <div class="card-title mb-0">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
-                                                            aria-expanded="false" aria-controls="uid-2"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
+                                                            aria-expanded="false" aria-controls="uid-3"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
                                                     </button>
-                                                    <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.json" target="_blank">example_1_2.json</a>
-                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a href="../../_sources/mod-dcat-ap-bblock/tests/no-title-fail.json" target="_blank">no-title-fail.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                        <span class="badge text-bg-info">Requires fail</span>
                                                     <div class="float-end">
-                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                            <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
                                                     <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">General</div>
+                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_2.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using no-title-fail.json from test resources</div>
                                                                     <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_2.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_2.ttl created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD no-title-fail.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle no-title-fail.ttl created</div>
                                                                     <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Using the following JSON Schema: #/$defs/mod:SemanticArtefact</div>
                                                                     <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;dct:title&#x27; is a required property
 
-Failed validating &#x27;required&#x27; in schema:
+Failed validating &#x27;required&#x27; in schema[0]:
     {&#x27;properties&#x27;: {&#x27;dcat:landingPage&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;dct:title&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;},
                     &#x27;mod:acronym&#x27;: {&#x27;type&#x27;: &#x27;string&#x27;}},
@@ -129,7 +177,96 @@ Failed validating &#x27;required&#x27; in schema:
      &#x27;type&#x27;: &#x27;object&#x27;}
 
 On instance:
-    {&#x27;description&#x27;: &#x27;my semantic artefact&#x27;, &#x27;mod:acronym&#x27;: &#x27;mySA&#x27;}</div>
+    {&#x27;dcat:landingPage&#x27;: &#x27;https://example.org&#x27;, &#x27;mod:acronym&#x27;: &#x27;mySA&#x27;}</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
+                                                            aria-expanded="false" aria-controls="uid-4"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="../../_sources/mod-dcat-ap-bblock/tests/pass.json" target="_blank">pass.json</a>
+                                                    <span class="badge bg-secondary test_resource">Test resource</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using pass.json from test resources</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD pass.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle pass.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
+                                                            aria-expanded="false" aria-controls="uid-5"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="bbr/template/mod-dcat-ap-bblock/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_1.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Using the following JSON Schema: #/$defs/mod:SemanticArtefact</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-2 validation-item ">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-6"
+                                                            aria-expanded="false" aria-controls="uid-6"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="bbr/template/mod-dcat-ap-bblock/example_1_2.json" target="_blank">example_1_2.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-success me-2">Passed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                    <div class="font-monospace entry-message section-files ">Using example_1_2.json from examples</div>
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_2.jsonld created</div>
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_2.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Using the following JSON Schema: #/$defs/mod:SemanticArtefactDistribution</div>
+                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
                                                     </div>
                                                 </div>
                                             </div>

@@ -21,32 +21,25 @@ This is the content of the example.
 ```json
 {
     "mod:acronym": "mySA",
-    "dct:title": "my semantic artefact"    
+    "dct:title": "my semantic artefact",
+    "dcat:landingPage": "https://example.org"
 }
-  
-  
-  
-  
 ```
 
 #### json
 ```json
 {
-    "mod:acronym": "mySA",
-    "description": "my semantic artefact"    
+    "mod:hasSyntax": "ttl",
+    "mod:hasRepresentationLanguage": "en"
 }
-  
-  
-  
-  
 ```
 
 #### jsonld
 ```jsonld
 {
-  "mod:acronym": "mySA",
-  "description": "my semantic artefact",
-  "@context": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld"
+  "mod:hasSyntax": "ttl",
+  "mod:hasRepresentationLanguage": "en",
+  "@context": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld"
 }
 ```
 
@@ -54,7 +47,8 @@ This is the content of the example.
 ```ttl
 @prefix mod: <https://w3id.org/mod#> .
 
-[] mod:acronym "mySA" .
+[] mod:hasRepresentationLanguage "en" ;
+    mod:hasSyntax "ttl" .
 
 
 ```
@@ -97,8 +91,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json)
-* JSON version: [schema.json](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml)
+* YAML version: [schema.yaml](https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json)
+* JSON version: [schema.json](https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml)
 
 
 # JSON-LD Context
@@ -116,16 +110,16 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld)
+[context.jsonld](https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld)
 
 ## Sources
 
-* [Sample source document](https://example.com/sources/1)
+* [MOD Ontology](https://github.com/fair-IMPACT/mod)
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/FAIR-IMPACT/MOD-DCAT-profile](https://github.com/FAIR-IMPACT/MOD-DCAT-profile)
+* URL: [https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile](https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile)
 * Path: `_sources/mod-dcat-ap-bblock`
 

@@ -29,8 +29,8 @@ This Building Block is the DCAT Profile for the MOD ontology
     <a href="http://www.opengis.net/def/status/under-development" target="_blank" data-rainbow-uri>Under development</a>
 </p>
 
-<aside class="warning">
-Validation for this building block has <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-ap-bblock/" target="_blank">failed</a></strong>
+<aside class="success">
+This building block is <strong><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile/blob/master/build/tests/bbr/template/mod-dcat-ap-bblock/" target="_blank">valid</a></strong>
 </aside>
 
 # Description
@@ -48,18 +48,15 @@ This is the representation of the DCAT Profile for MOD. This document provides a
 ```json
 {
     "mod:acronym": "mySA",
-    "dct:title": "my semantic artefact"    
+    "dct:title": "my semantic artefact",
+    "dcat:landingPage": "https://example.org"
 }
-  
-  
-  
-  
 ```
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-ap-bblock%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-AP-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-ap-bblock%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -67,19 +64,15 @@ This is the representation of the DCAT Profile for MOD. This document provides a
 
 ```json
 {
-    "mod:acronym": "mySA",
-    "description": "my semantic artefact"    
+    "mod:hasSyntax": "ttl",
+    "mod:hasRepresentationLanguage": "en"
 }
-  
-  
-  
-  
 ```
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-ap-bblock%2Fexample_1_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-AP-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-ap-bblock%2Fexample_1_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -87,16 +80,16 @@ This is the representation of the DCAT Profile for MOD. This document provides a
 
 ```jsonld
 {
-  "mod:acronym": "mySA",
-  "description": "my semantic artefact",
-  "@context": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld"
+  "mod:hasSyntax": "ttl",
+  "mod:hasRepresentationLanguage": "en",
+  "@context": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-ap-bblock%2Fexample_1_2.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-AP-profile%2Fbuild%2Ftests%2Fbbr%2Ftemplate%2Fmod-dcat-ap-bblock%2Fexample_1_2.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -105,14 +98,15 @@ This is the representation of the DCAT Profile for MOD. This document provides a
 ```turtle
 @prefix mod: <https://w3id.org/mod#> .
 
-[] mod:acronym "mySA" .
+[] mod:hasRepresentationLanguage "en" ;
+    mod:hasSyntax "ttl" .
 
 
 ```
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.ttl">Open in new window</a>
+    <a target="_blank" href="https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -155,12 +149,12 @@ x-jsonld-prefixes:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmod-dcat-ap-bblock%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-AP-profile%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmod-dcat-ap-bblock%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml</a>
-* JSON version: <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json</a>
+* YAML version: <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml</a>
+* JSON version: <a href="https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json</a>
 
 
 # JSON-LD Context
@@ -177,20 +171,20 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-profile%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmod-dcat-ap-bblock%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2FFAIR-IMPACT.github.io%2FMOD-DCAT-AP-profile%2Fbuild%2Fannotated%2Fbbr%2Ftemplate%2Fmod-dcat-ap-bblock%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld</a>
+<a href="https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld" target="_blank">https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld</a>
 
 # References
 
-* [Sample source document](https://example.com/sources/1)
+* [MOD Ontology](https://github.com/fair-IMPACT/mod)
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile" target="_blank">https://github.com/FAIR-IMPACT/MOD-DCAT-profile</a>
+* URL: <a href="https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile" target="_blank">https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile</a>
 * Path:
-<code><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/HEAD/_sources/mod-dcat-ap-bblock" target="_blank">_sources/mod-dcat-ap-bblock</a></code>
+<code><a href="https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile/blob/HEAD/_sources/mod-dcat-ap-bblock" target="_blank">_sources/mod-dcat-ap-bblock</a></code>
 

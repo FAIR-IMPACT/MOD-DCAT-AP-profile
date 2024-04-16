@@ -1,0 +1,30 @@
+Validation report for ogc.bbr.template.mod-dcat-ap-bblock - MOD-DCAT-Profile
+Generated 2024-04-16T10:01:39.801699+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
+=== Files ===
+Using no-acronym-fail.json from test resources
+JSON-LD context is present - uplifting
+Output JSON-LD no-acronym-fail.jsonld created
+Output Turtle no-acronym-fail.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+
+** Validation error **
+ValidationError: 'mod:acronym' is a required property
+
+Failed validating 'required' in schema[0]:
+    {'properties': {'dcat:landingPage': {'type': 'string'},
+                    'dct:title': {'type': 'string'},
+                    'mod:acronym': {'type': 'string'}},
+     'required': ['mod:acronym', 'dct:title', 'dcat:landingPage'],
+     'type': 'object'}
+
+On instance:
+    {'dcat:landingPage': 'https://example.org',
+     'dct:title': 'my semantic artefact'}
+=== End JSON Schema ===
+

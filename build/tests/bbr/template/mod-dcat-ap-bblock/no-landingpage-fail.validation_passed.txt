@@ -1,19 +1,22 @@
 Validation report for ogc.bbr.template.mod-dcat-ap-bblock - MOD-DCAT-Profile
-Generated 2024-02-26T12:02:33.278369+00:00
+Generated 2024-04-16T10:01:39.803413+00:00
+=== General ===
+Test was expected to fail and it did.
+=== End General ===
+
 === Files ===
-Using example_1_2.json from examples
+Using no-landingpage-fail.json from test resources
 JSON-LD context is present - uplifting
-Output JSON-LD example_1_2.jsonld created
-Output Turtle example_1_2.ttl created
+Output JSON-LD no-landingpage-fail.jsonld created
+Output Turtle no-landingpage-fail.ttl created
 === End Files ===
 
 === JSON Schema ===
-Using the following JSON Schema: #/$defs/mod:SemanticArtefact
 
 ** Validation error **
-ValidationError: 'dct:title' is a required property
+ValidationError: 'dcat:landingPage' is a required property
 
-Failed validating 'required' in schema:
+Failed validating 'required' in schema[0]:
     {'properties': {'dcat:landingPage': {'type': 'string'},
                     'dct:title': {'type': 'string'},
                     'mod:acronym': {'type': 'string'}},
@@ -21,6 +24,6 @@ Failed validating 'required' in schema:
      'type': 'object'}
 
 On instance:
-    {'description': 'my semantic artefact', 'mod:acronym': 'mySA'}
+    {'dct:title': 'my semantic artefact', 'mod:acronym': 'mySA'}
 === End JSON Schema ===
 

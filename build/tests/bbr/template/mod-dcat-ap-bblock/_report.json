@@ -2,19 +2,276 @@
   "title": "Validation report for ogc.bbr.template.mod-dcat-ap-bblock - MOD-DCAT-Profile",
   "bblockName": "MOD-DCAT-Profile",
   "bblockId": "ogc.bbr.template.mod-dcat-ap-bblock",
-  "generated": "2024-02-26T12:02:33.278421+00:00",
-  "result": false,
+  "generated": "2024-04-16T10:01:39.814861+00:00",
+  "result": true,
   "items": [
     {
       "source": {
-        "type": "EXAMPLE",
-        "requireFail": false,
-        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_1.json",
-        "exampleIndex": 1,
-        "snippetIndex": 1,
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/mod-dcat-ap-bblock/tests/no-acronym-fail.json",
+        "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/tests/no-acronym-fail.json",
         "language": "json"
       },
-      "result": false,
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using no-acronym-fail.json from test resources"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "no-acronym-fail.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD no-acronym-fail.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "no-acronym-fail.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle no-acronym-fail.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'mod:acronym' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'mod:acronym' is a required property\n\nFailed validating 'required' in schema[0]:\n    {'properties': {'dcat:landingPage': {'type': 'string'},\n                    'dct:title': {'type': 'string'},\n                    'mod:acronym': {'type': 'string'}},\n     'required': ['mod:acronym', 'dct:title', 'dcat:landingPage'],\n     'type': 'object'}\n\nOn instance:\n    {'dcat:landingPage': 'https://example.org',\n     'dct:title': 'my semantic artefact'}"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/mod-dcat-ap-bblock/tests/no-landingpage-fail.json",
+        "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/tests/no-landingpage-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using no-landingpage-fail.json from test resources"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "no-landingpage-fail.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD no-landingpage-fail.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "no-landingpage-fail.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle no-landingpage-fail.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'dcat:landingPage' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'dcat:landingPage' is a required property\n\nFailed validating 'required' in schema[0]:\n    {'properties': {'dcat:landingPage': {'type': 'string'},\n                    'dct:title': {'type': 'string'},\n                    'mod:acronym': {'type': 'string'}},\n     'required': ['mod:acronym', 'dct:title', 'dcat:landingPage'],\n     'type': 'object'}\n\nOn instance:\n    {'dct:title': 'my semantic artefact', 'mod:acronym': 'mySA'}"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": true,
+        "filename": "_sources/mod-dcat-ap-bblock/tests/no-title-fail.json",
+        "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/tests/no-title-fail.json",
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": [
+            {
+              "op": "require-fail",
+              "isError": false,
+              "message": "Test was expected to fail and it did."
+            }
+          ]
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using no-title-fail.json from test resources"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "no-title-fail.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD no-title-fail.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "no-title-fail.ttl",
+              "size": 2,
+              "isError": false,
+              "message": "Output Turtle no-title-fail.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": false,
+              "exception": "ValidationError",
+              "errorMessage": "'dct:title' is a required property",
+              "isError": true,
+              "message": "ValidationError: 'dct:title' is a required property\n\nFailed validating 'required' in schema[0]:\n    {'properties': {'dcat:landingPage': {'type': 'string'},\n                    'dct:title': {'type': 'string'},\n                    'mod:acronym': {'type': 'string'}},\n     'required': ['mod:acronym', 'dct:title', 'dcat:landingPage'],\n     'type': 'object'}\n\nOn instance:\n    {'dcat:landingPage': 'https://example.org', 'mod:acronym': 'mySA'}"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "TEST_RESOURCE",
+        "requireFail": false,
+        "filename": "_sources/mod-dcat-ap-bblock/tests/pass.json",
+        "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/tests/pass.json",
+        "language": "json"
+      },
+      "result": true,
       "sections": [
         {
           "name": "GENERAL",
@@ -27,7 +284,7 @@
           "entries": [
             {
               "isError": false,
-              "message": "Using example_1_1.json from examples"
+              "message": "Using pass.json from test resources"
             },
             {
               "op": "jsonld-uplift",
@@ -36,17 +293,17 @@
             },
             {
               "op": "jsonld-create",
-              "filename": "example_1_1.jsonld",
+              "filename": "pass.jsonld",
               "isError": false,
-              "message": "Output JSON-LD example_1_1.jsonld created"
+              "message": "Output JSON-LD pass.jsonld created"
             },
             {
               "op": "ttl-create",
               "empty": false,
-              "filename": "example_1_1.ttl",
-              "size": 2,
+              "filename": "pass.ttl",
+              "size": 3,
               "isError": false,
-              "message": "Output Turtle example_1_1.ttl created"
+              "message": "Output Turtle pass.ttl created"
             }
           ]
         },
@@ -55,17 +312,10 @@
           "title": "JSON Schema",
           "entries": [
             {
-              "filename": "#/$defs/mod:SemanticArtefact",
-              "isError": false,
-              "message": "Using the following JSON Schema: #/$defs/mod:SemanticArtefact"
-            },
-            {
               "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'dcat:landingPage' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'dcat:landingPage' is a required property\n\nFailed validating 'required' in schema:\n    {'properties': {'dcat:landingPage': {'type': 'string'},\n                    'dct:title': {'type': 'string'},\n                    'mod:acronym': {'type': 'string'}},\n     'required': ['mod:acronym', 'dct:title', 'dcat:landingPage'],\n     'type': 'object'}\n\nOn instance:\n    {'dct:title': 'my semantic artefact', 'mod:acronym': 'mySA'}"
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
             }
           ]
         },
@@ -95,12 +345,98 @@
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
-        "filename": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.json",
+        "filename": "build/tests/bbr/template/mod-dcat-ap-bblock/example_1_1.json",
+        "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 3,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "filename": "#/$defs/mod:SemanticArtefact",
+              "isError": false,
+              "message": "Using the following JSON Schema: #/$defs/mod:SemanticArtefact"
+            },
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": []
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.json",
+        "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.json",
         "exampleIndex": 1,
         "snippetIndex": 2,
         "language": "json"
       },
-      "result": false,
+      "result": true,
       "sections": [
         {
           "name": "GENERAL",
@@ -130,7 +466,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_2.ttl",
-              "size": 1,
+              "size": 2,
               "isError": false,
               "message": "Output Turtle example_1_2.ttl created"
             }
@@ -141,17 +477,15 @@
           "title": "JSON Schema",
           "entries": [
             {
-              "filename": "#/$defs/mod:SemanticArtefact",
+              "filename": "#/$defs/mod:SemanticArtefactDistribution",
               "isError": false,
-              "message": "Using the following JSON Schema: #/$defs/mod:SemanticArtefact"
+              "message": "Using the following JSON Schema: #/$defs/mod:SemanticArtefactDistribution"
             },
             {
               "op": "validation",
-              "result": false,
-              "exception": "ValidationError",
-              "errorMessage": "'dct:title' is a required property",
-              "isError": true,
-              "message": "ValidationError: 'dct:title' is a required property\n\nFailed validating 'required' in schema:\n    {'properties': {'dcat:landingPage': {'type': 'string'},\n                    'dct:title': {'type': 'string'},\n                    'mod:acronym': {'type': 'string'}},\n     'required': ['mod:acronym', 'dct:title', 'dcat:landingPage'],\n     'type': 'object'}\n\nOn instance:\n    {'description': 'my semantic artefact', 'mod:acronym': 'mySA'}"
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
             }
           ]
         },
@@ -180,8 +514,8 @@
   ],
   "globalErrors": {},
   "counts": {
-    "total": 2,
-    "passed": 0,
-    "failed": 2
+    "total": 6,
+    "passed": 6,
+    "failed": 0
   }
 }

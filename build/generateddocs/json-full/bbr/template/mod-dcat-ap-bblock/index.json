@@ -10,12 +10,12 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2024-02-26",
-  "link": "https://github.com/opengeospatial/bblock-template",
+  "dateOfLastChange": "2024-04-16",
+  "link": "https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile/",
   "sources": [
     {
-      "title": "Sample source document",
-      "link": "https://example.com/sources/1"
+      "title": "MOD Ontology",
+      "link": "https://github.com/fair-IMPACT/mod"
     }
   ],
   "maturity": "mature",
@@ -24,16 +24,16 @@
     "templates"
   ],
   "shaclRules": {},
-  "ldContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld",
+  "ldContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld",
   "schema": {
-    "application/yaml": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml",
-    "application/json": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json"
+    "application/yaml": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.yaml",
+    "application/json": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema.json"
   },
-  "sourceLdContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-ap-bblock/context.jsonld",
-  "sourceSchema": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-ap-bblock/schema.json",
-  "sourceFiles": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/_sources/mod-dcat-ap-bblock/",
-  "validationPassed": false,
-  "testOutputs": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile/blob/master/build/tests/bbr/template/mod-dcat-ap-bblock/",
+  "sourceSchema": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/schema.json",
+  "sourceLdContext": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/context.jsonld",
+  "sourceFiles": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/_sources/mod-dcat-ap-bblock/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile/blob/master/build/tests/bbr/template/mod-dcat-ap-bblock/",
   "description": "## MOD-DCAT-Profile\n\nThis is the representation of the DCAT Profile for MOD. This document provides a human-readable description of the Profile.\n",
   "examples": [
     {
@@ -44,30 +44,30 @@
           "language": "json",
           "ref": "examples/mod-ex1.json",
           "schema-ref": "#/$defs/mod:SemanticArtefact",
-          "code": "{\n    \"mod:acronym\": \"mySA\",\n    \"dct:title\": \"my semantic artefact\"    \n}\n  \n  \n  \n  ",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_1.json"
+          "code": "{\n    \"mod:acronym\": \"mySA\",\n    \"dct:title\": \"my semantic artefact\",\n    \"dcat:landingPage\": \"https://example.org\"\n}",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_1.json"
         },
         {
           "language": "json",
           "ref": "examples/mod-ex2.json",
-          "schema-ref": "#/$defs/mod:SemanticArtefact",
-          "code": "{\n    \"mod:acronym\": \"mySA\",\n    \"description\": \"my semantic artefact\"    \n}\n  \n  \n  \n  ",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.json"
+          "schema-ref": "#/$defs/mod:SemanticArtefactDistribution",
+          "code": "{\n    \"mod:hasSyntax\": \"ttl\",\n    \"mod:hasRepresentationLanguage\": \"en\"\n}",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"mod:acronym\": \"mySA\",\n  \"description\": \"my semantic artefact\",\n  \"@context\": \"https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld\"\n}",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.jsonld"
+          "code": "{\n  \"mod:hasSyntax\": \"ttl\",\n  \"mod:hasRepresentationLanguage\": \"en\",\n  \"@context\": \"https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/context.jsonld\"\n}",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.jsonld"
         },
         {
           "language": "ttl",
-          "code": "@prefix mod: <https://w3id.org/mod#> .\n\n[] mod:acronym \"mySA\" .\n\n",
-          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.ttl"
+          "code": "@prefix mod: <https://w3id.org/mod#> .\n\n[] mod:hasRepresentationLanguage \"en\" ;\n    mod:hasSyntax \"ttl\" .\n\n",
+          "url": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/tests/bbr/template/mod-dcat-ap-bblock/example_1_2.ttl"
         }
       ]
     }
   ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ndescription: Schema for the MOD-DCAT-Profile building block\n$defs:\n  mod:SemanticArtefact:\n    type: object\n    properties:\n      mod:acronym:\n        type: string\n      dct:title:\n        type: string\n      dcat:landingPage:\n        type: string\n    required:\n    - mod:acronym\n    - dct:title\n    - dcat:landingPage\n  mod:SemanticArtefactDistribution:\n    type: object\n    properties:\n      mod:hasSyntax:\n        type: string\n      mod:hasRepresentationLanguage:\n        type: string\nanyOf:\n- $ref: '#/$defs/mod:SemanticArtefact'\nx-jsonld-prefixes:\n  mod: https://w3id.org/mod#\n  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  xsd: http://www.w3.org/2001/XMLSchema#\n",
-  "gitRepository": "https://github.com/FAIR-IMPACT/MOD-DCAT-profile",
+  "gitRepository": "https://github.com/FAIR-IMPACT/MOD-DCAT-AP-profile",
   "gitPath": "_sources/mod-dcat-ap-bblock"
 }

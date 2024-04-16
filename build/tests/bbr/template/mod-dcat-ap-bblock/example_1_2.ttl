@@ -1,4 +1,5 @@
 @prefix mod: <https://w3id.org/mod#> .
 
-[] mod:acronym "mySA" .
+[] mod:hasRepresentationLanguage "en" ;
+    mod:hasSyntax "ttl" .
 

@@ -36,7 +36,7 @@
       },
       "anyOf": [
         {
-          "$ref": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema-oas3.0.json#/x-defs/ogc.bbr.template.mod-dcat-ap-bblock/$defs/mod:SemanticArtefact"
+          "$ref": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema-oas3.0.json#/x-defs/ogc.bbr.template.mod-dcat-ap-bblock/$defs/mod:SemanticArtefact"
         }
       ],
       "x-jsonld-prefixes": {
@@ -46,12 +46,12 @@
         "xsd": "http://www.w3.org/2001/XMLSchema#"
       },
       "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
-      "x-schema-source": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema-oas3.0.json"
+      "x-schema-source": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema-oas3.0.json"
     }
   },
   "allOf": [
     {
-      "$ref": "https://FAIR-IMPACT.github.io/MOD-DCAT-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema-oas3.0.json#/x-defs/ogc.bbr.template.mod-dcat-ap-bblock"
+      "$ref": "https://FAIR-IMPACT.github.io/MOD-DCAT-AP-profile/build/annotated/bbr/template/mod-dcat-ap-bblock/schema-oas3.0.json#/x-defs/ogc.bbr.template.mod-dcat-ap-bblock"
     }
   ]
 }
